@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     env:
-      SCIENCE_REVISION: 06c965bc030321501bd2ad3efc30d33af5fc7412
+      SCIENCE_REVISION: 612cf15f34455cf0c5d96067eb2c1608bd410da0
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
@@ -33,12 +33,12 @@ jobs:
         env:
           NODE_PATH: ${{ runner.temp }}/hosted-deps/node_modules
         run: |
-          node verification/hosted_ci/capture_hosted_math.cjs --root "$GITHUB_WORKSPACE" --repository GoGoKo699/Fermi-Sea-Reservoir-Locality --revision "$SCIENCE_REVISION" --output "$RUNNER_TEMP/hosted-evidence" --page README.md --page science/gaussian_stationarity.md
+          node verification/hosted_ci/capture_hosted_math.cjs --root "$GITHUB_WORKSPACE" --repository GoGoKo699/Fermi-Sea-Reservoir-Locality --revision "$SCIENCE_REVISION" --output "$RUNNER_TEMP/hosted-evidence"
       - name: Retain evidence
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          name: hosted-math-early-${{ github.run_id }}
+          name: hosted-math-full-${{ github.run_id }}
           path: ${{ runner.temp }}/hosted-evidence
           if-no-files-found: error
           retention-days: 7
