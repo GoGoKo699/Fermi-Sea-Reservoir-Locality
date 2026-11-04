@@ -1,0 +1,26 @@
+{
+  "covariance_derivative_errors": [
+    4.960423369615951e-16,
+    2.1244840933369637e-16,
+    3.8009517220728787e-16,
+    5.236683886859337e-16
+  ],
+  "fourier_occupation_checks": [
+    {
+      "max_occupation_error": 2.61078958569789e-16,
+      "largest_trace_term": 0.030664464071846212
+    },
+    {
+      "max_occupation_error": 3.197447814957099e-16,
+      "largest_trace_term": 0.12556112252842686
+    },
+    {
+      "max_occupation_error": 4.608020975449674e-16,
+      "largest_trace_term": 0.197956246131157
+    },
+    {
+      "max_occupation_error": 2.7042939932679434e-16,
+      "largest_trace_term": 0.043570300562163315
+    }
+  ]
+}

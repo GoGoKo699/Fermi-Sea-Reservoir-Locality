@@ -1,0 +1,44 @@
+# Fermi-Sea Reservoir Locality
+
+This repository determines the spatial range needed for a time-independent, one-site translation-invariant Gaussian fermionic Lindblad generator to prepare a finite critical Fermi sea with fixed global overlap.
+
+## Authoritative scientific route
+
+- README.md: question, main results, reading route, reproduction and contact.
+- science/model.md: target chain, physical parity convention, exact generator class, common radius, fidelity and theorem.
+- science/gaussian_stationarity.md: covariance convention, Fourier occupation identity, rational-degree bound, momentum-block fidelity and onsite regularization.
+- science/range_lower_bound.md: explicit finite-size converse, root-potential lemmas, exceptional-mode control and asymptotic constants.
+- science/reservoir_construction.md: positive geometric-root filters, normalized Fourier coefficients and sufficient finite precision.
+- science/preparation_costs.md: arbitrary-initial-state convergence, exact worst-case curve, actual slowest-rate asymptotics and numerical costs.
+- science/interpretation.md: physical meaning and boundaries of the spatial conclusion.
+- references/RELATED_WORK.md: closest primary literature, inherited ingredients and the scope of the contribution.
+- references/references.bib: structured primary bibliography.
+
+## Routes by reader intention
+
+For the scientific story, read README.md, science/model.md and science/interpretation.md.
+For the converse, read science/gaussian_stationarity.md followed by science/range_lower_bound.md. The scalar root argument can also be read first.
+For a concrete reservoir, read science/reservoir_construction.md and science/preparation_costs.md together.
+For attribution or novelty comparisons, consult references/RELATED_WORK.md before describing any ingredient as new.
+For reproduction, follow verification/README.md, run verification/run_all.py, and inspect verification/verification_summary.json. Generate the illustration with verification/make_figures.py.
+
+## Distinctions to preserve
+
+The fidelity is the squared overlap with the entire pure target. Fixed global fidelity controls an aggregate occupation error; it does not impose a uniform inverse-size error on each mode.
+
+The common radius counts both Hamiltonian and jump range. General pairing is allowed. There is one physical fermionic mode per unit cell, and physical states commute with total fermion parity. Odd-parity vector projectors are physical.
+
+The theorem gives a sharp square-logarithmic stationary spatial threshold at fixed overlap. It permits unrestricted waiting and arbitrary finite size-dependent coefficients. It does not cover persistent auxiliaries, larger unit cells, nonlinear jumps, feedback or time-dependent control.
+
+The construction has bounded occupation rates, finite normalized coefficient precision and a very long actual preparation time. Its time and precision costs are sufficient properties of that construction, not universal optimal frontiers.
+
+Physical stationary uniqueness does not by itself imply a strictly stable one-particle drift. The Gaussian proof uses balanced onsite regularization and then takes the vanishing-noise limit.
+
+The Fourier occupation identity retains the trace term needed for unequal populations at opposite momenta. Do not silently impose reflection symmetry.
+
+Locality is fermionic; a spin representation can introduce Jordan–Wigner strings. Effective Lindblad locality also differs from locality in a microscopic system-bath model.
+
+The finite numerical checks diagnose conventions and realizations. They are not proofs of the universal theorem or interval certificates. The ideal-filter figure uses logarithmic evaluations and is not a time-versus-range optimization.
+
+Educational exposition should keep these assumptions visible and connect each claim to its authoritative proof page.
+

@@ -1,0 +1,2883 @@
+{
+  "purpose": "Numerical convention and spike diagnostics only; no universal theorem established by sampling.",
+  "fidelity_convention": "F = target pure-state overlap, product(1-error_k); natural logarithms.",
+  "rates": "Gamma=1; log rates retained to avoid underflow.",
+  "newman_occupations": [
+    {
+      "N": 1026,
+      "s": 4,
+      "jump_radius_m": 16,
+      "sum_errors": 0.36225671976855467,
+      "log_fidelity": -0.37939502732539926,
+      "minimum_log_rate_Gamma_1": -66.61293208219237,
+      "maximum_log_rate_Gamma_1": -0.6931471805599444,
+      "minimum_abs_cosine": 0.0030619763591345573,
+      "geometric_root_range_condition": false,
+      "log_sum_error_bound_if_range_condition": 2.3018020282988862,
+      "sum_error_bound_holds_if_applicable": true,
+      "minimum_log_rate_lower_bound": -70.69314718055995,
+      "rate_lower_bound_holds": true,
+      "maximum_rate_bound_holds": true
+    },
+    {
+      "N": 1026,
+      "s": 7,
+      "jump_radius_m": 49,
+      "sum_errors": 6.961305538219291e-16,
+      "log_fidelity": -6.961305538219291e-16,
+      "minimum_log_rate_Gamma_1": -320.98682053098486,
+      "maximum_log_rate_Gamma_1": -0.6931471805599435,
+      "minimum_abs_cosine": 0.0030619763591345573,
+      "geometric_root_range_condition": true,
+      "log_sum_error_bound_if_range_condition": -2.3298189691329423,
+      "sum_error_bound_holds_if_applicable": true,
+      "minimum_log_rate_lower_bound": -352.69314718055995,
+      "rate_lower_bound_holds": true,
+      "maximum_rate_bound_holds": true
+    },
+    {
+      "N": 1026,
+      "s": 11,
+      "jump_radius_m": 121,
+      "sum_errors": 7.180400206096827e-25,
+      "log_fidelity": -7.180400206096827e-25,
+      "minimum_log_rate_Gamma_1": -1009.9502925197487,
+      "maximum_log_rate_Gamma_1": -0.6931471805599453,
+      "minimum_abs_cosine": 0.0030619763591345573,
+      "geometric_root_range_condition": true,
+      "log_sum_error_bound_if_range_condition": -8.505313632375382,
+      "sum_error_bound_holds_if_applicable": true,
+      "minimum_log_rate_lower_bound": -1344.69314718056,
+      "rate_lower_bound_holds": true,
+      "maximum_rate_bound_holds": true
+    },
+    {
+      "N": 1026,
+      "s": 24,
+      "jump_radius_m": 576,
+      "sum_errors": 2.0764741971379537e-53,
+      "log_fidelity": -2.0764741971379537e-53,
+      "minimum_log_rate_Gamma_1": -5820.6201615170385,
+      "maximum_log_rate_Gamma_1": -0.6931471805599666,
+      "minimum_abs_cosine": 0.0030619763591345573,
+      "geometric_root_range_condition": true,
+      "log_sum_error_bound_if_range_condition": -28.575671287913305,
+      "sum_error_bound_holds_if_applicable": true,
+      "minimum_log_rate_lower_bound": -13850.69314718056,
+      "rate_lower_bound_holds": true,
+      "maximum_rate_bound_holds": true
+    },
+    {
+      "N": 4098,
+      "s": 5,
+      "jump_radius_m": 25,
+      "sum_errors": 0.4668765185564534,
+      "log_fidelity": -0.49537408028418084,
+      "minimum_log_rate_Gamma_1": -128.43599482525687,
+      "maximum_log_rate_Gamma_1": -0.6931471805599435,
+      "minimum_abs_cosine": 0.0007666159945997229,
+      "geometric_root_range_condition": false,
+      "log_sum_error_bound_if_range_condition": 2.142759665556407,
+      "sum_error_bound_holds_if_applicable": true,
+      "minimum_log_rate_lower_bound": -132.69314718055995,
+      "rate_lower_bound_holds": true,
+      "maximum_rate_bound_holds": true
+    },
+    {
+      "N": 4098,
+      "s": 9,
+      "jump_radius_m": 81,
+      "sum_errors": 8.378451591513837e-20,
+      "log_fidelity": -8.378451591513837e-20,
+      "minimum_log_rate_Gamma_1": -681.3262013319874,
+      "maximum_log_rate_Gamma_1": -0.6931471805599417,
+      "minimum_abs_cosine": 0.0007666159945997229,
+      "geometric_root_range_condition": true,
+      "log_sum_error_bound_if_range_condition": -4.032734997686031,
+      "sum_error_bound_holds_if_applicable": true,
+      "minimum_log_rate_lower_bound": -740.6931471805599,
+      "rate_lower_bound_holds": true,
+      "maximum_rate_bound_holds": true
+    },
+    {
+      "N": 4098,
+      "s": 13,
+      "jump_radius_m": 169,
+      "sum_errors": 1.0574166080485473e-28,
+      "log_fidelity": -1.0574166080485473e-28,
+      "minimum_log_rate_Gamma_1": -1728.5993008318085,
+      "maximum_log_rate_Gamma_1": -0.6931471805599488,
+      "minimum_abs_cosine": 0.0007666159945997229,
+      "geometric_root_range_condition": true,
+      "log_sum_error_bound_if_range_condition": -10.208229660928469,
+      "sum_error_bound_holds_if_applicable": true,
+      "minimum_log_rate_lower_bound": -2212.69314718056,
+      "rate_lower_bound_holds": true,
+      "maximum_rate_bound_holds": true
+    },
+    {
+      "N": 4098,
+      "s": 27,
+      "jump_radius_m": 729,
+      "sum_errors": 2.4471285939474984e-59,
+      "log_fidelity": -2.4471285939474984e-59,
+      "minimum_log_rate_Gamma_1": -9019.430604950778,
+      "maximum_log_rate_Gamma_1": -0.6931471805599595,
+      "minimum_abs_cosine": 0.0007666159945997229,
+      "geometric_root_range_condition": true,
+      "log_sum_error_bound_if_range_condition": -31.822460982277008,
+      "sum_error_bound_holds_if_applicable": true,
+      "minimum_log_rate_lower_bound": -19712.69314718056,
+      "rate_lower_bound_holds": true,
+      "maximum_rate_bound_holds": true
+    },
+    {
+      "N": 16386,
+      "s": 5,
+      "jump_radius_m": 25,
+      "sum_errors": 2.6657827807587613,
+      "log_fidelity": -3.130151413457928,
+      "minimum_log_rate_Gamma_1": -128.82967888573427,
+      "maximum_log_rate_Gamma_1": -0.6931471805599435,
+      "minimum_abs_cosine": 0.00019172419347798724,
+      "geometric_root_range_condition": false,
+      "log_sum_error_bound_if_range_condition": 3.5286879274593224,
+      "sum_error_bound_holds_if_applicable": true,
+      "minimum_log_rate_lower_bound": -132.69314718055995,
+      "rate_lower_bound_holds": true,
+      "maximum_rate_bound_holds": true
+    },
+    {
+      "N": 16386,
+      "s": 10,
+      "jump_radius_m": 100,
+      "sum_errors": 1.937665758239634e-21,
+      "log_fidelity": -1.937665758239634e-21,
+      "minimum_log_rate_Gamma_1": -960.3174954230351,
+      "maximum_log_rate_Gamma_1": -0.6931471805599417,
+      "minimum_abs_cosine": 0.00019172419347798724,
+      "geometric_root_range_condition": true,
+      "log_sum_error_bound_if_range_condition": -4.190680401593726,
+      "sum_error_bound_holds_if_applicable": true,
+      "minimum_log_rate_lower_bound": -1012.6931471805599,
+      "rate_lower_bound_holds": true,
+      "maximum_rate_bound_holds": true
+    },
+    {
+      "N": 16386,
+      "s": 15,
+      "jump_radius_m": 225,
+      "sum_errors": 1.6399896576617893e-32,
+      "log_fidelity": -1.6399896576617893e-32,
+      "minimum_log_rate_Gamma_1": -2720.992545626132,
+      "maximum_log_rate_Gamma_1": -0.6931471805599382,
+      "minimum_abs_cosine": 0.00019172419347798724,
+      "geometric_root_range_condition": true,
+      "log_sum_error_bound_if_range_condition": -11.910048730646773,
+      "sum_error_bound_holds_if_applicable": true,
+      "minimum_log_rate_lower_bound": -3392.69314718056,
+      "rate_lower_bound_holds": true,
+      "maximum_rate_bound_holds": true
+    },
+    {
+      "N": 16386,
+      "s": 30,
+      "jump_radius_m": 900,
+      "sum_errors": 2.9608889610913925e-65,
+      "log_fidelity": -2.9608889610913925e-65,
+      "minimum_log_rate_Gamma_1": -13152.57531257862,
+      "maximum_log_rate_Gamma_1": -0.6931471805600306,
+      "minimum_abs_cosine": 0.00019172419347798724,
+      "geometric_root_range_condition": true,
+      "log_sum_error_bound_if_range_condition": -35.06815371780591,
+      "sum_error_bound_holds_if_applicable": true,
+      "minimum_log_rate_lower_bound": -27032.69314718056,
+      "rate_lower_bound_holds": true,
+      "maximum_rate_bound_holds": true
+    },
+    {
+      "N": 65538,
+      "s": 6,
+      "jump_radius_m": 36,
+      "sum_errors": 3.2175524865608116,
+      "log_fidelity": -3.790139969145317,
+      "minimum_log_rate_Gamma_1": -220.52285448711314,
+      "maximum_log_rate_Gamma_1": -0.6931471805599417,
+      "minimum_abs_cosine": 4.793543672942865e-05,
+      "geometric_root_range_condition": false,
+      "log_sum_error_bound_if_range_condition": 3.371017077018551,
+      "sum_error_bound_holds_if_applicable": true,
+      "minimum_log_rate_lower_bound": -224.69314718055995,
+      "rate_lower_bound_holds": true,
+      "maximum_rate_bound_holds": true
+    },
+    {
+      "N": 65538,
+      "s": 12,
+      "jump_radius_m": 144,
+      "sum_errors": 2.764339447330966e-25,
+      "log_fidelity": -2.764339447330966e-25,
+      "minimum_log_rate_Gamma_1": -1652.156550323993,
+      "maximum_log_rate_Gamma_1": -0.6931471805599417,
+      "minimum_abs_cosine": 4.793543672942865e-05,
+      "geometric_root_range_condition": true,
+      "log_sum_error_bound_if_range_condition": -5.892224917845107,
+      "sum_error_bound_holds_if_applicable": true,
+      "minimum_log_rate_lower_bound": -1742.69314718056,
+      "rate_lower_bound_holds": true,
+      "maximum_rate_bound_holds": true
+    },
+    {
+      "N": 65538,
+      "s": 17,
+      "jump_radius_m": 289,
+      "sum_errors": 2.6412119610830782e-36,
+      "log_fidelity": -2.6412119610830782e-36,
+      "minimum_log_rate_Gamma_1": -4030.519475491599,
+      "maximum_log_rate_Gamma_1": -0.6931471805599595,
+      "minimum_abs_cosine": 4.793543672942865e-05,
+      "geometric_root_range_condition": true,
+      "log_sum_error_bound_if_range_condition": -13.611593246898154,
+      "sum_error_bound_holds_if_applicable": true,
+      "minimum_log_rate_lower_bound": -4932.69314718056,
+      "rate_lower_bound_holds": true,
+      "maximum_rate_bound_holds": true
+    },
+    {
+      "N": 65538,
+      "s": 33,
+      "jump_radius_m": 1089,
+      "sum_errors": 3.657090484436441e-71,
+      "log_fidelity": -3.657090484436441e-71,
+      "minimum_log_rate_Gamma_1": -18334.56602604177,
+      "maximum_log_rate_Gamma_1": -0.6931471805601158,
+      "minimum_abs_cosine": 4.793543672942865e-05,
+      "geometric_root_range_condition": true,
+      "log_sum_error_bound_if_range_condition": -38.31357189986791,
+      "sum_error_bound_holds_if_applicable": true,
+      "minimum_log_rate_lower_bound": -35972.69314718056,
+      "rate_lower_bound_holds": true,
+      "maximum_rate_bound_holds": true
+    }
+  ],
+  "root_kernel": {
+    "N": 65538,
+    "j_range": [
+      1626,
+      8192
+    ],
+    "total_weight": 1.6682364917651453,
+    "maximum_weight": 0.0006171276158424277,
+    "weights_nonincreasing": true,
+    "all_bounds_hold": true,
+    "maximum_weighted_sum": 3.063682362923835,
+    "named_edge_cases": [
+      {
+        "name": "real_at_node",
+        "root_real": 0.23978219380546945,
+        "root_imag": 0.0,
+        "deleted_indices": [
+          4908,
+          4909
+        ],
+        "weighted_sum_after_deletion": 3.063681673578394,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": "inf"
+      },
+      {
+        "name": "real_nextafter_node",
+        "root_real": 0.23978219380546947,
+        "root_imag": 0.0,
+        "deleted_indices": [
+          4909,
+          4910
+        ],
+        "weighted_sum_after_deletion": 3.063682362923835,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 37.388217817855384
+      },
+      {
+        "name": "imaginary_distance_1e-300_from_node",
+        "root_real": 0.23978219380546945,
+        "root_imag": 1e-300,
+        "deleted_indices": [
+          4908,
+          4909
+        ],
+        "weighted_sum_after_deletion": 3.063681673578394,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 690.0406507852721
+      },
+      {
+        "name": "imaginary_distance_1e-14_from_node",
+        "root_real": 0.23978219380546945,
+        "root_imag": 1e-14,
+        "deleted_indices": [
+          4908,
+          4909
+        ],
+        "weighted_sum_after_deletion": 3.063681673578394,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 31.50131418897503
+      },
+      {
+        "name": "positive_real_between_nodes",
+        "root_real": 0.2398075385117015,
+        "root_imag": 0.0,
+        "deleted_indices": [
+          4909,
+          4910
+        ],
+        "weighted_sum_after_deletion": 3.0635631271109913,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 9.848116411967803
+      },
+      {
+        "name": "complex_angle_small",
+        "root_real": 0.23978219380534954,
+        "root_imag": 2.3978219380542945e-07,
+        "deleted_indices": [
+          4908,
+          4909
+        ],
+        "weighted_sum_after_deletion": 3.0636816681643753,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 14.508657738524136
+      },
+      {
+        "name": "complex_angle_quarter_pi",
+        "root_real": 0.16955161524763443,
+        "root_imag": 0.1695516152476344,
+        "deleted_indices": [
+          4908,
+          4909
+        ],
+        "weighted_sum_after_deletion": 1.2266989664394234,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.8813735870195432
+      },
+      {
+        "name": "pure_imaginary",
+        "root_real": 0.0,
+        "root_imag": 0.23978219380546945,
+        "deleted_indices": [
+          4908,
+          4909
+        ],
+        "weighted_sum_after_deletion": 0.0,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.0
+      },
+      {
+        "name": "negative_real",
+        "root_real": -0.23978219380546945,
+        "root_imag": 0.0,
+        "deleted_indices": [
+          4908,
+          4909
+        ],
+        "weighted_sum_after_deletion": 3.063681673578394,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": "inf"
+      },
+      {
+        "name": "peak_below_grid",
+        "root_real": 0.0007812535619995685,
+        "root_imag": 0.0,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.016219312698998862,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.020000666706669445
+      },
+      {
+        "name": "peak_above_grid",
+        "root_real": 41.422760240715306,
+        "root_imag": 0.0,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.016226096631931194,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.020000666706669445
+      },
+      {
+        "name": "zero",
+        "root_real": 0.0,
+        "root_imag": 0.0,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.0,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.0
+      }
+    ],
+    "random_case_count": 200,
+    "random_cases": [
+      {
+        "name": "random_0",
+        "root_real": -0.8703821112362589,
+        "root_imag": 0.19922602816131502,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.7516947409700812,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.959969897430283
+      },
+      {
+        "name": "random_1",
+        "root_real": -0.1840065182801507,
+        "root_imag": 0.2462418743009728,
+        "deleted_indices": [
+          6220,
+          6221
+        ],
+        "weighted_sum_after_deletion": 0.9091046162124091,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.6909531380792451
+      },
+      {
+        "name": "random_2",
+        "root_real": -0.8355913816489009,
+        "root_imag": -0.4275528466431091,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.6392476166377606,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.7886753044610519
+      },
+      {
+        "name": "random_3",
+        "root_real": -0.011059471798538332,
+        "root_imag": 0.0384972568347722,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.2099577816744917,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.2280650635682946
+      },
+      {
+        "name": "random_4",
+        "root_real": -0.05048680786485573,
+        "root_imag": 0.9416548891816494,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.03547118430055138,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.039447477094373705
+      },
+      {
+        "name": "random_5",
+        "root_real": -0.0798807249429399,
+        "root_imag": 0.07612920460524052,
+        "deleted_indices": [
+          2292,
+          2293
+        ],
+        "weighted_sum_after_deletion": 1.1943603608017748,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.9157929335212611
+      },
+      {
+        "name": "random_6",
+        "root_real": -0.009830839139658723,
+        "root_imag": -8.266500096851651e-06,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.20453342962097443,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.2530094213510936
+      },
+      {
+        "name": "random_7",
+        "root_real": -0.056303718023765686,
+        "root_imag": 0.045232710179508445,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 1.0506183301787608,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 1.038224748131838
+      },
+      {
+        "name": "random_8",
+        "root_real": 1.1303708464851403,
+        "root_imag": 0.3489079181895151,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.5487973301091127,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.6870291976729219
+      },
+      {
+        "name": "random_9",
+        "root_real": -1.1677257825798328,
+        "root_imag": -0.7058759295233327,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.42097795289650386,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.5174794805908183
+      },
+      {
+        "name": "random_10",
+        "root_real": -0.02362777183184802,
+        "root_imag": 0.004444974900662758,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.4961065582504176,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.6220311928664688
+      },
+      {
+        "name": "random_11",
+        "root_real": 0.24218406690339644,
+        "root_imag": 0.1713040732303398,
+        "deleted_indices": [
+          6015,
+          6016
+        ],
+        "weighted_sum_after_deletion": 1.4398674622576138,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 1.1459580494411519
+      },
+      {
+        "name": "random_12",
+        "root_real": 0.6446169029968482,
+        "root_imag": -1.129746462312181,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.24910138928627984,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.2948426079678596
+      },
+      {
+        "name": "random_13",
+        "root_real": 0.014658553397350909,
+        "root_imag": -0.007333194871149581,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.3046566971382379,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.3762388069349889
+      },
+      {
+        "name": "random_14",
+        "root_real": 1.7156207414758553,
+        "root_imag": 0.36725791640371475,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.3769704595061726,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.46895209989810444
+      },
+      {
+        "name": "random_15",
+        "root_real": -0.005883372330717144,
+        "root_imag": -0.024477628853637946,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.11758793302085198,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.13730205611982393
+      },
+      {
+        "name": "random_16",
+        "root_real": -0.12397251320144381,
+        "root_imag": 0.07577671971282798,
+        "deleted_indices": [
+          3009,
+          3010
+        ],
+        "weighted_sum_after_deletion": 1.7016722756003453,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 1.2679226153599656
+      },
+      {
+        "name": "random_17",
+        "root_real": -0.06783803490994753,
+        "root_imag": -0.04993251701274075,
+        "deleted_indices": [
+          1752,
+          1753
+        ],
+        "weighted_sum_after_deletion": 1.2263539950958533,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 1.113677471011928
+      },
+      {
+        "name": "random_18",
+        "root_real": -0.006014304943029784,
+        "root_imag": -0.0014738251179909373,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.12494159156529337,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.15421531253460552
+      },
+      {
+        "name": "random_19",
+        "root_real": -0.39927601592018963,
+        "root_imag": -1.0224574689002555,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.21264059523971812,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.2451135515740061
+      },
+      {
+        "name": "random_20",
+        "root_real": 2.0392074645682325,
+        "root_imag": 0.2797250911908498,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.32518262613050974,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.4038504377912292
+      },
+      {
+        "name": "random_21",
+        "root_real": 0.02930904625059777,
+        "root_imag": 0.09297131721292842,
+        "deleted_indices": [
+          2026,
+          2027
+        ],
+        "weighted_sum_after_deletion": 0.40824261455140554,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.31024719720671157
+      },
+      {
+        "name": "random_22",
+        "root_real": 0.9151717400279622,
+        "root_imag": -0.46050693927064196,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.5878643235439657,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.7263906272489531
+      },
+      {
+        "name": "random_23",
+        "root_real": 0.5770693664784777,
+        "root_imag": -0.2169339681850359,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 1.0468045922078892,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 1.3193543842425124
+      },
+      {
+        "name": "random_24",
+        "root_real": -0.13549716370613268,
+        "root_imag": 0.06544380878356097,
+        "deleted_indices": [
+          3115,
+          3116
+        ],
+        "weighted_sum_after_deletion": 1.9246290949907188,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 1.4746984793436748
+      },
+      {
+        "name": "random_25",
+        "root_real": -2.3192742177383527,
+        "root_imag": -0.32526784778779194,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.2853343844253049,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.3537393826245152
+      },
+      {
+        "name": "random_26",
+        "root_real": 0.004140709573291373,
+        "root_imag": 0.0029422417515487824,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.0859455644846712,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.1059501294025833
+      },
+      {
+        "name": "random_27",
+        "root_real": 1.9257829017865875,
+        "root_imag": 1.1162079995466736,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.2612228266039839,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.321909970167945
+      },
+      {
+        "name": "random_28",
+        "root_real": -3.171742039946005,
+        "root_imag": 5.01661212541624,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.060442580053157155,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.07436843562465678
+      },
+      {
+        "name": "random_29",
+        "root_real": -0.10634484552037525,
+        "root_imag": 0.06871113752288752,
+        "deleted_indices": [
+          2626,
+          2627
+        ],
+        "weighted_sum_after_deletion": 1.598314488212061,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 1.2209393362173282
+      },
+      {
+        "name": "random_30",
+        "root_real": -0.5635293030718113,
+        "root_imag": -0.4872411902377862,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.6585085383758942,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.7625321977867543
+      },
+      {
+        "name": "random_31",
+        "root_real": -0.0014356735879005734,
+        "root_imag": -0.02353515700984698,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.028759765406937247,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.03369753108492368
+      },
+      {
+        "name": "random_32",
+        "root_real": 0.43956860362748046,
+        "root_imag": -0.696044967564437,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.40905352323549704,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.45841106431812
+      },
+      {
+        "name": "random_33",
+        "root_real": 0.3981681059968071,
+        "root_imag": -0.336679774044834,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.9086251368309698,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.9589684871189885
+      },
+      {
+        "name": "random_34",
+        "root_real": 0.003392397873375714,
+        "root_imag": -0.0024900508618603615,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.07041618346920941,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.08681116857677385
+      },
+      {
+        "name": "random_35",
+        "root_real": -0.17158256413357645,
+        "root_imag": -0.20284905662568048,
+        "deleted_indices": [
+          5416,
+          5417
+        ],
+        "weighted_sum_after_deletion": 1.0539242146021768,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.7680822691121004
+      },
+      {
+        "name": "random_36",
+        "root_real": 0.025166434253712112,
+        "root_imag": -0.01683742328920504,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.5192255482205562,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.6330071780868884
+      },
+      {
+        "name": "random_37",
+        "root_real": -0.005529540043788993,
+        "root_imag": -0.0064943566593280025,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.11454936974116933,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.14081150271977494
+      },
+      {
+        "name": "random_38",
+        "root_real": -0.02980927842374498,
+        "root_imag": -0.0727815563853942,
+        "deleted_indices": [
+          1636,
+          1637
+        ],
+        "weighted_sum_after_deletion": 0.4703027268090162,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.3989078452302768
+      },
+      {
+        "name": "random_39",
+        "root_real": -0.19799427855173446,
+        "root_imag": -0.1969772114232068,
+        "deleted_indices": [
+          5681,
+          5682
+        ],
+        "weighted_sum_after_deletion": 1.179749948105762,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.8850199352238638
+      },
+      {
+        "name": "random_40",
+        "root_real": 0.017351370815806552,
+        "root_imag": 0.10522781202837214,
+        "deleted_indices": [
+          2215,
+          2216
+        ],
+        "weighted_sum_after_deletion": 0.22478856121670576,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.16415515182357354
+      },
+      {
+        "name": "random_41",
+        "root_real": 0.016801643437341737,
+        "root_imag": -0.006751053286250459,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.34991957135163243,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.43344076510135565
+      },
+      {
+        "name": "random_42",
+        "root_real": 0.2513160195720501,
+        "root_imag": 1.6767773974682443,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.057414586956592045,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.06845265881227203
+      },
+      {
+        "name": "random_43",
+        "root_real": -0.007359015486513299,
+        "root_imag": 0.024204484434322642,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.14724979184149478,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.1721923458159007
+      },
+      {
+        "name": "random_44",
+        "root_real": 0.00949668449324443,
+        "root_imag": -0.001850606874398922,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.19750665596500086,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.24418171746668182
+      },
+      {
+        "name": "random_45",
+        "root_real": 0.06895298035935886,
+        "root_imag": 0.07067590364520378,
+        "deleted_indices": [
+          2052,
+          2053
+        ],
+        "weighted_sum_after_deletion": 1.08239509264856,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.8640303849488598
+      },
+      {
+        "name": "random_46",
+        "root_real": 0.005723171128311649,
+        "root_imag": 0.006267554442108466,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.11858919433545509,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.14582848985011854
+      },
+      {
+        "name": "random_47",
+        "root_real": -2.050942858278567,
+        "root_imag": 4.4175311756203435,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.057981724407213,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.07123511545618122
+      },
+      {
+        "name": "random_48",
+        "root_real": -0.001735724762787373,
+        "root_imag": -0.003647665750707705,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.03600464901848863,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.04434491544342345
+      },
+      {
+        "name": "random_49",
+        "root_real": -0.04839067000017279,
+        "root_imag": 0.021893497032363606,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 1.0155207671415036,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 1.2462256039895183
+      },
+      {
+        "name": "random_50",
+        "root_real": 0.14226207920606912,
+        "root_imag": 0.10397623612653469,
+        "deleted_indices": [
+          3638,
+          3639
+        ],
+        "weighted_sum_after_deletion": 1.56270166877446,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 1.1193688039640892
+      },
+      {
+        "name": "random_51",
+        "root_real": 0.15301190024023,
+        "root_imag": 0.1200979233103443,
+        "deleted_indices": [
+          4007,
+          4008
+        ],
+        "weighted_sum_after_deletion": 1.4910510432955117,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 1.0625351284569022
+      },
+      {
+        "name": "random_52",
+        "root_real": -0.01224511557157638,
+        "root_imag": 0.022220155748344867,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.24684876782251736,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.29155846524141404
+      },
+      {
+        "name": "random_53",
+        "root_real": -3.285173821532956,
+        "root_imag": -5.281236189943329,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.05701413944864679,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.07015969455889581
+      },
+      {
+        "name": "random_54",
+        "root_real": 0.7377871629912992,
+        "root_imag": -0.15031966669716013,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.9071638764620782,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 1.180610045159347
+      },
+      {
+        "name": "random_55",
+        "root_real": -0.2235702569482522,
+        "root_imag": 0.49252298526501476,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.4347809241211872,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.42251864184409793
+      },
+      {
+        "name": "random_56",
+        "root_real": 1.2544504726434713,
+        "root_imag": -1.3231202634711998,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.2516321568148698,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.3065337305745059
+      },
+      {
+        "name": "random_57",
+        "root_real": 0.2396088064141264,
+        "root_imag": 3.8437984221318873,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.010807231148163144,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.013231112689944258
+      },
+      {
+        "name": "random_58",
+        "root_real": -1.0409889189355894,
+        "root_imag": 0.4408528721280937,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.5511263486669129,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.6852689321393032
+      },
+      {
+        "name": "random_59",
+        "root_real": -3.1528679989471207,
+        "root_imag": -2.801975576465964,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.11898672624789003,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.1464467396654625
+      },
+      {
+        "name": "random_60",
+        "root_real": 0.07629357028695617,
+        "root_imag": -0.09563099948039254,
+        "deleted_indices": [
+          2538,
+          2539
+        ],
+        "weighted_sum_after_deletion": 1.0077376889291783,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.7309425473309046
+      },
+      {
+        "name": "random_61",
+        "root_real": 0.004074831834874823,
+        "root_imag": -0.04501609616093646,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.07501121514699037,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.0783142136213093
+      },
+      {
+        "name": "random_62",
+        "root_real": 0.02769327732268633,
+        "root_imag": 0.23867262491709954,
+        "deleted_indices": [
+          4918,
+          4919
+        ],
+        "weighted_sum_after_deletion": 0.16902531153452954,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.11577159892364763
+      },
+      {
+        "name": "random_63",
+        "root_real": -0.00586726543890665,
+        "root_imag": 0.000661605237087333,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.12189643801315078,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.15047376024638304
+      },
+      {
+        "name": "random_64",
+        "root_real": -0.9845107658353612,
+        "root_imag": -2.4021147329180197,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.09736837324357764,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.11857063157837278
+      },
+      {
+        "name": "random_65",
+        "root_real": 0.006757547412329807,
+        "root_imag": -0.007512730795504867,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.139901222743181,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.1718170958721692
+      },
+      {
+        "name": "random_66",
+        "root_real": -0.19313908336343258,
+        "root_imag": 0.45065047400003816,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.441427154356414,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.40990509076939735
+      },
+      {
+        "name": "random_67",
+        "root_real": 0.27718966664007094,
+        "root_imag": 0.2796644923361461,
+        "deleted_indices": [
+          7824,
+          7825
+        ],
+        "weighted_sum_after_deletion": 0.9927315036278446,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.8751023467463543
+      },
+      {
+        "name": "random_68",
+        "root_real": 0.038434903575652296,
+        "root_imag": 0.012072939833499724,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.8162652460221536,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 1.0383879625305759
+      },
+      {
+        "name": "random_69",
+        "root_real": -5.009442960248344,
+        "root_imag": -1.4241000853263006,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.12421315858021781,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.15323908852045665
+      },
+      {
+        "name": "random_70",
+        "root_real": -0.03454021700028776,
+        "root_imag": -0.03423380934563369,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.6757691459250046,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.7535990931558598
+      },
+      {
+        "name": "random_71",
+        "root_real": 0.004068683599311739,
+        "root_imag": 0.0067567033901161306,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.08424111390561315,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.103474692100606
+      },
+      {
+        "name": "random_72",
+        "root_real": -2.001477654287916,
+        "root_imag": 2.389330670234411,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.1380221519555967,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.16931847815975143
+      },
+      {
+        "name": "random_73",
+        "root_real": -0.009022800408059911,
+        "root_imag": 0.01522218917393116,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.18477810995401345,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.22335243382366254
+      },
+      {
+        "name": "random_74",
+        "root_real": -0.12507314897540273,
+        "root_imag": 0.08448007639327292,
+        "deleted_indices": [
+          3124,
+          3125
+        ],
+        "weighted_sum_after_deletion": 1.6183702287406547,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 1.183900254638387
+      },
+      {
+        "name": "random_75",
+        "root_real": 0.0037668846627038053,
+        "root_imag": -0.007676959834756896,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.07791954369621598,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.09558016365408628
+      },
+      {
+        "name": "random_76",
+        "root_real": 2.7052575268090737,
+        "root_imag": -6.1886019769638185,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.039811036676231024,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.04898527904274319
+      },
+      {
+        "name": "random_77",
+        "root_real": 0.6802015841487684,
+        "root_imag": 0.3332967244866205,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.800930869657102,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.9869236767600016
+      },
+      {
+        "name": "random_78",
+        "root_real": 0.4788972872894598,
+        "root_imag": 1.4123811657034688,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.14091735921826692,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.16714309618236578
+      },
+      {
+        "name": "random_79",
+        "root_real": -0.057800550925598305,
+        "root_imag": 0.22713779830131942,
+        "deleted_indices": [
+          4802,
+          4803
+        ],
+        "weighted_sum_after_deletion": 0.36816813729027364,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.25180410015474863
+      },
+      {
+        "name": "random_80",
+        "root_real": -3.5838021636708053,
+        "root_imag": 5.081052420362931,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.062241909537694484,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.07660695007979212
+      },
+      {
+        "name": "random_81",
+        "root_real": 0.7478712843099209,
+        "root_imag": 1.466692707054506,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.1820344546508585,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.2183823226723306
+      },
+      {
+        "name": "random_82",
+        "root_real": 0.03393513587141213,
+        "root_imag": 0.043531940787274216,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.6340283323600486,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.6616851171918774
+      },
+      {
+        "name": "random_83",
+        "root_real": -0.0099890934323635,
+        "root_imag": 0.008243218515630524,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.2068868461191041,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.25421864503963
+      },
+      {
+        "name": "random_84",
+        "root_real": -0.004447091704777648,
+        "root_imag": -0.013909973500725327,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.09118823041139076,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.11044841688159268
+      },
+      {
+        "name": "random_85",
+        "root_real": -0.0012218605553968157,
+        "root_imag": 0.005260630385198037,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.025320299147599135,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.031140785358061418
+      },
+      {
+        "name": "random_86",
+        "root_real": 0.16891495120519023,
+        "root_imag": 0.3097496519471494,
+        "deleted_indices": [
+          7075,
+          7076
+        ],
+        "weighted_sum_after_deletion": 0.6576689261620343,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.5213821455892855
+      },
+      {
+        "name": "random_87",
+        "root_real": 1.8403263611142036,
+        "root_imag": -5.119353952774315,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.041711943268293146,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.05126502059628124
+      },
+      {
+        "name": "random_88",
+        "root_real": -1.6080979406410685,
+        "root_imag": -5.271983725129796,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.03550496818614236,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.04363412320927407
+      },
+      {
+        "name": "random_89",
+        "root_real": -0.03698410035693383,
+        "root_imag": 0.004259738354900976,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.7920850133365718,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 1.0242246457449675
+      },
+      {
+        "name": "random_90",
+        "root_real": 0.032024241476649645,
+        "root_imag": 0.057087783942655984,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.5549508045184723,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.5251760460990105
+      },
+      {
+        "name": "random_91",
+        "root_real": 0.037051401161341826,
+        "root_imag": 0.0031495659579502786,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.7941976661293408,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 1.0285361642117516
+      },
+      {
+        "name": "random_92",
+        "root_real": 0.03787953804209184,
+        "root_imag": -0.16216819141289127,
+        "deleted_indices": [
+          3442,
+          3443
+        ],
+        "weighted_sum_after_deletion": 0.34603757868689305,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.23150826199979613
+      },
+      {
+        "name": "random_93",
+        "root_real": 0.0007393801109409938,
+        "root_imag": -0.005564188285728276,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.015318312904140633,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.018833065293125895
+      },
+      {
+        "name": "random_94",
+        "root_real": 0.005501333369049699,
+        "root_imag": 0.0033795970735035954,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.11419910859896447,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.14080129056413204
+      },
+      {
+        "name": "random_95",
+        "root_real": 0.06905071321086058,
+        "root_imag": -0.0003737453081960804,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 1.6643571257118157,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 2.7853013947328384
+      },
+      {
+        "name": "random_96",
+        "root_real": -0.01064725149201729,
+        "root_imag": -0.006066896153759455,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.22104854240962754,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.27257926159772117
+      },
+      {
+        "name": "random_97",
+        "root_real": 8.04363095184682,
+        "root_imag": 1.2936268208850448,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.08147834022014366,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.10047625149012918
+      },
+      {
+        "name": "random_98",
+        "root_real": 0.015461490674389709,
+        "root_imag": 0.012566660662526838,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.3192252903795451,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.3903253792084298
+      },
+      {
+        "name": "random_99",
+        "root_real": 0.00785855888714588,
+        "root_imag": 0.00201195622406261,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.16332695081685805,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.20172478508927405
+      },
+      {
+        "name": "random_100",
+        "root_real": -0.02112270325069176,
+        "root_imag": -0.0461321133800153,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.3877652255127444,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.4004409888932816
+      },
+      {
+        "name": "random_101",
+        "root_real": -0.15620039033716143,
+        "root_imag": -0.311688336197301,
+        "deleted_indices": [
+          6997,
+          6998
+        ],
+        "weighted_sum_after_deletion": 0.6138842610766689,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.48223381321367664
+      },
+      {
+        "name": "random_102",
+        "root_real": 0.0019659992114047144,
+        "root_imag": 0.004661383694922201,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.04075916078511746,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.05016121799184514
+      },
+      {
+        "name": "random_103",
+        "root_real": -0.22171679602170247,
+        "root_imag": -0.2497478104943144,
+        "deleted_indices": [
+          6723,
+          6724
+        ],
+        "weighted_sum_after_deletion": 1.0022481493380075,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.7997433188294678
+      },
+      {
+        "name": "random_104",
+        "root_real": -0.02967443990417123,
+        "root_imag": -0.09390559595315578,
+        "deleted_indices": [
+          2047,
+          2048
+        ],
+        "weighted_sum_after_deletion": 0.4108805280735284,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.3109668302132349
+      },
+      {
+        "name": "random_105",
+        "root_real": 0.0009236896346651254,
+        "root_imag": -0.010599737624546527,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.01903408001524348,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.023219918713666576
+      },
+      {
+        "name": "random_106",
+        "root_real": 3.041748880582498,
+        "root_imag": 5.687379928369882,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.04908837454631218,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.060402438922077195
+      },
+      {
+        "name": "random_107",
+        "root_real": -3.306769477959185,
+        "root_imag": 7.229097257960542,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.035139969859755954,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.04325998724759872
+      },
+      {
+        "name": "random_108",
+        "root_real": 0.36813080534559117,
+        "root_imag": 0.029640171675360594,
+        "deleted_indices": [
+          7379,
+          7380
+        ],
+        "weighted_sum_after_deletion": 2.2592210113870244,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 3.2140716546386066
+      },
+      {
+        "name": "random_109",
+        "root_real": 0.07146387635706423,
+        "root_imag": -0.07695508842202183,
+        "deleted_indices": [
+          2182,
+          2183
+        ],
+        "weighted_sum_after_deletion": 1.0730675280827642,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.8300067321123994
+      },
+      {
+        "name": "random_110",
+        "root_real": 1.100524776680067,
+        "root_imag": 1.0395889221088885,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.31973151867601785,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.388538917336838
+      },
+      {
+        "name": "random_111",
+        "root_real": -0.12097171166277657,
+        "root_imag": 0.10647178566485432,
+        "deleted_indices": [
+          3332,
+          3333
+        ],
+        "weighted_sum_after_deletion": 1.3788666775482823,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.9744703543923487
+      },
+      {
+        "name": "random_112",
+        "root_real": 0.024349315478391604,
+        "root_imag": -0.002213164327405543,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.5122352441037892,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.6441746397150867
+      },
+      {
+        "name": "random_113",
+        "root_real": -0.4145937665991483,
+        "root_imag": -0.19756235879164544,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 1.3087860557298527,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 1.4615799509001868
+      },
+      {
+        "name": "random_114",
+        "root_real": 0.00035874750226523453,
+        "root_imag": -0.01563047350949131,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.007329021840893132,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.008830483084564023
+      },
+      {
+        "name": "random_115",
+        "root_real": 0.08356350472599976,
+        "root_imag": -0.20711135403397832,
+        "deleted_indices": [
+          4583,
+          4584
+        ],
+        "weighted_sum_after_deletion": 0.5763089882134464,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.39325648568069493
+      },
+      {
+        "name": "random_116",
+        "root_real": 0.024942094726300483,
+        "root_imag": 0.006691736963060798,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.5235071428749395,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.6558893272488366
+      },
+      {
+        "name": "random_117",
+        "root_real": -0.08476584140465941,
+        "root_imag": -0.0660972593431906,
+        "deleted_indices": [
+          2233,
+          2234
+        ],
+        "weighted_sum_after_deletion": 1.3487954449399384,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 1.0676995779201848
+      },
+      {
+        "name": "random_118",
+        "root_real": -0.09951353073148218,
+        "root_imag": -0.15766722454890492,
+        "deleted_indices": [
+          3844,
+          3845
+        ],
+        "weighted_sum_after_deletion": 0.8761078223688513,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.5953616503166497
+      },
+      {
+        "name": "random_119",
+        "root_real": -0.011179612293977882,
+        "root_imag": 0.08350691618465597,
+        "deleted_indices": [
+          1752,
+          1753
+        ],
+        "weighted_sum_after_deletion": 0.16571395073064038,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.1334797655424036
+      },
+      {
+        "name": "random_120",
+        "root_real": -0.3132520773685302,
+        "root_imag": -0.39837989560535764,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.712523606417365,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.7021847863518687
+      },
+      {
+        "name": "random_121",
+        "root_real": -1.2707534850316782,
+        "root_imag": 1.1841600435362702,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.28116038564076673,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.3430088598353439
+      },
+      {
+        "name": "random_122",
+        "root_real": 6.4389565603202,
+        "root_imag": 3.316635464563098,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.08250180257410292,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.10170209719764056
+      },
+      {
+        "name": "random_123",
+        "root_real": -0.4162005313187781,
+        "root_imag": -0.42912720290350265,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.7229309088663578,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.7785171509003989
+      },
+      {
+        "name": "random_124",
+        "root_real": 2.5548942832049253,
+        "root_imag": -2.7367954751250503,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.12227080072198779,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.1502932135275814
+      },
+      {
+        "name": "random_125",
+        "root_real": 0.0379841363231474,
+        "root_imag": 0.33973870961941693,
+        "deleted_indices": [
+          6871,
+          6872
+        ],
+        "weighted_sum_after_deletion": 0.14621582712599349,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.11157234264083105
+      },
+      {
+        "name": "random_126",
+        "root_real": 2.863714654000678,
+        "root_imag": -0.5162572285561025,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.22786533720293667,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.2818571160488258
+      },
+      {
+        "name": "random_127",
+        "root_real": -1.4819999197667595,
+        "root_imag": 1.3401274573483837,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.24831119945751953,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.3038854229277377
+      },
+      {
+        "name": "random_128",
+        "root_real": -0.4398811965733756,
+        "root_imag": -0.1066436140057519,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 1.570841356956391,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 2.0601737910892797
+      },
+      {
+        "name": "random_129",
+        "root_real": -6.515327815284596,
+        "root_imag": 1.0174488119086107,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.10075301434473549,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.1242757340925662
+      },
+      {
+        "name": "random_130",
+        "root_real": 0.038555174920483,
+        "root_imag": -0.14121719047944667,
+        "deleted_indices": [
+          3031,
+          3032
+        ],
+        "weighted_sum_after_deletion": 0.3977818665138971,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.26973754404549766
+      },
+      {
+        "name": "random_131",
+        "root_real": 0.07538598607592117,
+        "root_imag": -0.2113297669988112,
+        "deleted_indices": [
+          4603,
+          4604
+        ],
+        "weighted_sum_after_deletion": 0.512922935990412,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.34955953331075484
+      },
+      {
+        "name": "random_132",
+        "root_real": 0.19537985384597115,
+        "root_imag": -0.16063665706334893,
+        "deleted_indices": [
+          5167,
+          5168
+        ],
+        "weighted_sum_after_deletion": 1.3854562291477879,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 1.0263565257170213
+      },
+      {
+        "name": "random_133",
+        "root_real": -0.012463113720075174,
+        "root_imag": 0.01062673269871542,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.2576516350175242,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.3157091077995555
+      },
+      {
+        "name": "random_134",
+        "root_real": -0.012348697648678455,
+        "root_imag": 0.01715214492768157,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.25220108173937955,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.30356038778821715
+      },
+      {
+        "name": "random_135",
+        "root_real": -1.3582094733029886,
+        "root_imag": -0.5601739923116639,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.42477244511220696,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.5267617988013275
+      },
+      {
+        "name": "random_136",
+        "root_real": 0.19725696304450382,
+        "root_imag": -0.05341070437087135,
+        "deleted_indices": [
+          4204,
+          4205
+        ],
+        "weighted_sum_after_deletion": 2.3846318169023273,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 2.0174876312747987
+      },
+      {
+        "name": "random_137",
+        "root_real": -2.383030404201065,
+        "root_imag": -7.777731497049031,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.024182227877910384,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.02976653675712626
+      },
+      {
+        "name": "random_138",
+        "root_real": 0.5582617341374763,
+        "root_imag": 0.8590012580779781,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.3433754976803568,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.39859393993689496
+      },
+      {
+        "name": "random_139",
+        "root_real": -0.014210766869745765,
+        "root_imag": 0.03223017356555323,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.27712827045485294,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.3120879888501089
+      },
+      {
+        "name": "random_140",
+        "root_real": -1.61100860191357,
+        "root_imag": 0.03215234103400486,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.4208733760061274,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.525816138886705
+      },
+      {
+        "name": "random_141",
+        "root_real": -0.2229014359645278,
+        "root_imag": -0.34954395355709406,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.6899635892390875,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.6008756261278727
+      },
+      {
+        "name": "random_142",
+        "root_real": 0.004406427121490287,
+        "root_imag": -0.008323371717333218,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.09109638418771676,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.11164989786077628
+      },
+      {
+        "name": "random_143",
+        "root_real": -0.02549894882156413,
+        "root_imag": -0.0036721355480316196,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.5368003192797323,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.6757528308802168
+      },
+      {
+        "name": "random_144",
+        "root_real": -1.9707467952447584,
+        "root_imag": -1.588594522671652,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.20628177267850267,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.25345368246917677
+      },
+      {
+        "name": "random_145",
+        "root_real": 0.024691960793000182,
+        "root_imag": -0.018876857737846718,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.5065768168894483,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.6122887154029515
+      },
+      {
+        "name": "random_146",
+        "root_real": 2.44364079841144,
+        "root_imag": 0.10734569151623101,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.27559259113672974,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.3416372975092392
+      },
+      {
+        "name": "random_147",
+        "root_real": -1.596282756241158,
+        "root_imag": -2.3792888983928067,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.1300429143968656,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.15912619966531738
+      },
+      {
+        "name": "random_148",
+        "root_real": -0.0415953079644479,
+        "root_imag": 0.016511448511977944,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.8786381392561404,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 1.1034976902552782
+      },
+      {
+        "name": "random_149",
+        "root_real": 0.004229192703356805,
+        "root_imag": 0.0002843379330947016,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.08783402889172598,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.10837133941488464
+      },
+      {
+        "name": "random_150",
+        "root_real": -0.001935400823602933,
+        "root_imag": 0.009645161568712025,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.03993528649089261,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.048811449807052654
+      },
+      {
+        "name": "random_151",
+        "root_real": 0.05159764346383696,
+        "root_imag": -0.08856104539256676,
+        "deleted_indices": [
+          2130,
+          2131
+        ],
+        "weighted_sum_after_deletion": 0.7305913983323828,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.5538666705942639
+      },
+      {
+        "name": "random_152",
+        "root_real": -0.2558992611520118,
+        "root_imag": 0.4797295512305717,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.498090457198756,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.48942546550687743
+      },
+      {
+        "name": "random_153",
+        "root_real": -0.0433802986344941,
+        "root_imag": -0.008989301667524758,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.9359551668481387,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 1.2222567845994545
+      },
+      {
+        "name": "random_154",
+        "root_real": 0.06397186705251635,
+        "root_imag": -0.11979148481573466,
+        "deleted_indices": [
+          2815,
+          2816
+        ],
+        "weighted_sum_after_deletion": 0.7361303707097211,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.5114374418647576
+      },
+      {
+        "name": "random_155",
+        "root_real": -0.00471124390056789,
+        "root_imag": 0.016397587787952958,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.09613646224578243,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.11562998906257649
+      },
+      {
+        "name": "random_156",
+        "root_real": 0.04607254304995334,
+        "root_imag": 0.12339919153749453,
+        "deleted_indices": [
+          2731,
+          2732
+        ],
+        "weighted_sum_after_deletion": 0.5266186456893084,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.3651902839722778
+      },
+      {
+        "name": "random_157",
+        "root_real": 0.023569480330551187,
+        "root_imag": 0.09479759667211686,
+        "deleted_indices": [
+          2030,
+          2031
+        ],
+        "weighted_sum_after_deletion": 0.32518522094657704,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.24613667968141795
+      },
+      {
+        "name": "random_158",
+        "root_real": -5.296335904889183,
+        "root_imag": 4.069733344255949,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.0797704250802545,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.09828847929339779
+      },
+      {
+        "name": "random_159",
+        "root_real": -0.2048317085452965,
+        "root_imag": -0.08487102507625284,
+        "deleted_indices": [
+          4551,
+          4552
+        ],
+        "weighted_sum_after_deletion": 2.045341613440966,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 1.6145974619409573
+      },
+      {
+        "name": "random_160",
+        "root_real": -0.008410523551283073,
+        "root_imag": -0.016911716441322663,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.17159279120444673,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.20629650369938624
+      },
+      {
+        "name": "random_161",
+        "root_real": -1.1568216554051218,
+        "root_imag": 1.084178900717902,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.3067401747987446,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.37333054598019005
+      },
+      {
+        "name": "random_162",
+        "root_real": -0.18792261968155577,
+        "root_imag": 0.040954219597531184,
+        "deleted_indices": [
+          3963,
+          3964
+        ],
+        "weighted_sum_after_deletion": 2.527455593580483,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 2.228389928344215
+      },
+      {
+        "name": "random_163",
+        "root_real": -0.005662239041980688,
+        "root_imag": -0.006167321144106843,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.11733462230841427,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.14430013550450216
+      },
+      {
+        "name": "random_164",
+        "root_real": 0.0005194985418430889,
+        "root_imag": -0.01879346019843179,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.010539048439130876,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.012571759289893514
+      },
+      {
+        "name": "random_165",
+        "root_real": 0.0010606685896067103,
+        "root_imag": -0.006454961860779252,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.021959332027303845,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.026970488040906293
+      },
+      {
+        "name": "random_166",
+        "root_real": -0.1884319319557856,
+        "root_imag": 0.04759493218817999,
+        "deleted_indices": [
+          4003,
+          4004
+        ],
+        "weighted_sum_after_deletion": 2.438819860267991,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 2.0847388206047532
+      },
+      {
+        "name": "random_167",
+        "root_real": -0.4322469661690167,
+        "root_imag": -0.07501119755567766,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 1.7054853326991428,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 2.3993022507880037
+      },
+      {
+        "name": "random_168",
+        "root_real": 0.2915901978429209,
+        "root_imag": 3.792108422463808,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.013484119776758233,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.01650586721716274
+      },
+      {
+        "name": "random_169",
+        "root_real": 0.24956117375577605,
+        "root_imag": 0.4925954593942222,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.4714282369553826,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.4646657969603419
+      },
+      {
+        "name": "random_170",
+        "root_real": 0.505391060998594,
+        "root_imag": -3.9479553062208503,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.021350140055136045,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.02615250128186264
+      },
+      {
+        "name": "random_171",
+        "root_real": 7.019449691458617,
+        "root_imag": 2.861597439242826,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.08212014296805364,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.10124680206314585
+      },
+      {
+        "name": "random_172",
+        "root_real": 0.8951208590957632,
+        "root_imag": -0.15081755625518517,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.7496666543142063,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.9613219692202835
+      },
+      {
+        "name": "random_173",
+        "root_real": 0.22364150393806861,
+        "root_imag": 0.6467153995896059,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.28549933276018663,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.2980938701827157
+      },
+      {
+        "name": "random_174",
+        "root_real": 0.011728928402147044,
+        "root_imag": -0.014431370125959617,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.24083977119016464,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.29220017347764315
+      },
+      {
+        "name": "random_175",
+        "root_real": -0.6508103469786682,
+        "root_imag": 0.4801066482433869,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.6561524293126171,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.7805610804368993
+      },
+      {
+        "name": "random_176",
+        "root_real": -0.005087428994580023,
+        "root_imag": 0.006718655680667302,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.10535900164536957,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.12945794679808564
+      },
+      {
+        "name": "random_177",
+        "root_real": -0.317815072220653,
+        "root_imag": -0.27204700540000976,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 1.0624122365889264,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.9953902865849137
+      },
+      {
+        "name": "random_178",
+        "root_real": -0.004355431529755248,
+        "root_imag": -0.00302775317304083,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.0904029575596804,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.11144600992679399
+      },
+      {
+        "name": "random_179",
+        "root_real": 0.21132876646137788,
+        "root_imag": -0.1938612091598572,
+        "deleted_indices": [
+          5825,
+          5826
+        ],
+        "weighted_sum_after_deletion": 1.237007145447061,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.9436733378841564
+      },
+      {
+        "name": "random_180",
+        "root_real": 0.3503692137634815,
+        "root_imag": 0.5567292752085148,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.4928769677915017,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.523426723536534
+      },
+      {
+        "name": "random_181",
+        "root_real": -0.22117686647724716,
+        "root_imag": -0.5293559372507398,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.3872809683180275,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.3837298682539877
+      },
+      {
+        "name": "random_182",
+        "root_real": -0.3008276702225991,
+        "root_imag": -0.4029742572081345,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.68937505625258,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.673286259000048
+      },
+      {
+        "name": "random_183",
+        "root_real": 0.004541948346599823,
+        "root_imag": 0.002555866082086198,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.09429448590019,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.11627945649691984
+      },
+      {
+        "name": "random_184",
+        "root_real": 0.146050681213211,
+        "root_imag": -0.043906990874471113,
+        "deleted_indices": [
+          3156,
+          3157
+        ],
+        "weighted_sum_after_deletion": 2.303469793493915,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 1.9168921821585228
+      },
+      {
+        "name": "random_185",
+        "root_real": -0.04217729438093763,
+        "root_imag": -0.004412866122556166,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.9129198187360793,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 1.2011293959390068
+      },
+      {
+        "name": "random_186",
+        "root_real": -0.061334894905414925,
+        "root_imag": -0.019835668863944438,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 1.3343472219233283,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 1.6901607739526434
+      },
+      {
+        "name": "random_187",
+        "root_real": 7.049342202182728,
+        "root_imag": 3.1520126014928453,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.0794692551644618,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.09797221283038438
+      },
+      {
+        "name": "random_188",
+        "root_real": -0.1918113284030597,
+        "root_imag": 0.1834632743373909,
+        "deleted_indices": [
+          5411,
+          5412
+        ],
+        "weighted_sum_after_deletion": 1.233167015452095,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.9131855826540674
+      },
+      {
+        "name": "random_189",
+        "root_real": 0.5347812484684834,
+        "root_imag": 2.9154530710041877,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.04060240036838039,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.04950119878367487
+      },
+      {
+        "name": "random_190",
+        "root_real": -6.3943702971367795,
+        "root_imag": 2.659134930132268,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.0896317111256449,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.11051186828164439
+      },
+      {
+        "name": "random_191",
+        "root_real": -0.26647477150754123,
+        "root_imag": 0.2960937196657966,
+        "deleted_indices": [
+          7907,
+          7908
+        ],
+        "weighted_sum_after_deletion": 0.9214533332981663,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.808842894560612
+      },
+      {
+        "name": "random_192",
+        "root_real": -0.22112161323630714,
+        "root_imag": -0.48788792239297407,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.43714422591050145,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.42308769726140527
+      },
+      {
+        "name": "random_193",
+        "root_real": -0.014683888667617545,
+        "root_imag": 0.003015280427911203,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.30613232845016775,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.37982782878545995
+      },
+      {
+        "name": "random_194",
+        "root_real": -2.359629210435115,
+        "root_imag": 5.729050110192273,
+        "deleted_indices": [
+          8192
+        ],
+        "weighted_sum_after_deletion": 0.04125115599322851,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.05073783017152578
+      },
+      {
+        "name": "random_195",
+        "root_real": -0.012506395271655387,
+        "root_imag": 0.011367827267294203,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.25826783793066166,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.31595959703083665
+      },
+      {
+        "name": "random_196",
+        "root_real": -0.17225909531621833,
+        "root_imag": -0.06734097692337415,
+        "deleted_indices": [
+          3814,
+          3815
+        ],
+        "weighted_sum_after_deletion": 2.1296066576151493,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 1.6685637354543565
+      },
+      {
+        "name": "random_197",
+        "root_real": -0.12226709921929713,
+        "root_imag": 0.015864752330291686,
+        "deleted_indices": [
+          2558,
+          2559
+        ],
+        "weighted_sum_after_deletion": 2.6145269410680054,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 2.739437468835934
+      },
+      {
+        "name": "random_198",
+        "root_real": -0.05078876961003513,
+        "root_imag": -0.005493764671419118,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 1.1229152804101374,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 1.532030919335111
+      },
+      {
+        "name": "random_199",
+        "root_real": -0.010530161104033245,
+        "root_imag": 0.005278056320786197,
+        "deleted_indices": [
+          1626
+        ],
+        "weighted_sum_after_deletion": 0.2187384072622529,
+        "pi_squared_over_two": 4.934802200544679,
+        "bound_holds": true,
+        "unremoved_max_kernel": 0.26995116125482754
+      }
+    ]
+  }
+}

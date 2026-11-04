@@ -1,0 +1,29 @@
+{
+  "status": "pass",
+  "scope": "Finite diagnostics, not an asymptotic proof or interval certificate.",
+  "filter_cases": 16,
+  "root_cases": 212,
+  "largest_deleted_root_sum": 3.063682362923835,
+  "root_integral_bound": 4.934802200544679,
+  "covariance_derivative_cases": 4,
+  "maximum_covariance_residual": 5.236683886859337e-16,
+  "fourier_occupation_cases": 4,
+  "maximum_occupation_residual": 4.608020975449674e-16,
+  "coefficient_precision_cases": 3,
+  "non_Gaussian_dynamics": {
+    "N": 6,
+    "time": 3.7,
+    "Lindblad_convention": "D[L]=L rho Ldagger - anticommutator/2",
+    "initial_state": "Seeded random pure state of odd fermion parity",
+    "initial_Wick_residual_modes_0_1": -0.0682549849204436,
+    "random_state_target_fidelity_evolved": 0.5131391807990525,
+    "random_state_target_fidelity_diagonal_formula": 0.5131391807990533,
+    "complement_target_fidelity_evolved": 0.47072943994878497,
+    "exact_worst_case_formula": 0.47072943994878536,
+    "maximum_occupation_equation_error": 1.1102230246251565e-15,
+    "random_fidelity_formula_error": 7.771597123168522e-16,
+    "worst_case_fidelity_formula_error": 3.885780586188048e-16,
+    "all_formula_errors_below_1e_11": true,
+    "non_Gaussian_Wick_residual_above_1e_4": true
+  }
+}
