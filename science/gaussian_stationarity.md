@@ -26,8 +26,8 @@ where the indices in these real-space formulas include site and Majorana compone
 
 ```math
 C_{\alpha\beta}
-=\frac i2\operatorname{Tr}\rho[w_\alpha,w_\beta]
-=i\operatorname{Tr}(\rho w_\alpha w_\beta)-i\delta_{\alpha\beta}.
+=\frac i2\mathrm{Tr}\rho[w_\alpha,w_\beta]
+=i\mathrm{Tr}(\rho w_\alpha w_\beta)-i\delta_{\alpha\beta}.
 ```
 
 Write
@@ -44,8 +44,8 @@ and define
 \mathsf M_{\alpha\beta}
 =\sum_\lambda\ell_{\lambda,\alpha}\overline{\ell_{\lambda,\beta}},
 \qquad
-\mathsf A=\operatorname{Re}\mathsf M,
-\qquad\mathsf B=\operatorname{Im}\mathsf M.
+\mathsf A=\mathrm{Re}\mathsf M,
+\qquad\mathsf B=\mathrm{Im}\mathsf M.
 ```
 
 Thus $`\mathsf M\ge0`$, $`\mathsf A`$ is real symmetric positive semidefinite, and $`\mathsf B`$ is real antisymmetric. Entrywise real and imaginary parts in the Gram definition are taken **in real space**, before the Fourier transform. The exact covariance equation is
@@ -85,7 +85,7 @@ X(k)+X(k)^\dagger=-4\mathsf A(k)\le0.
 
 ## Why physical uniqueness does not by itself justify a full inverse
 
-Uniqueness among parity-invariant density matrices need not make $`X`$ strictly stable. For one mode with $`L=c+c^\dagger=w_1`$ and $`H=0`$, the sole physical stationary density matrix is $`I_2/2`$, but $`X=\operatorname{diag}(-2,0)`$. The odd operator $`w_1`$ is also stationary. Thus an argument that infers invertibility of the entire four-component Bloch system solely from physical uniqueness would be incomplete.
+Uniqueness among parity-invariant density matrices need not make $`X`$ strictly stable. For one mode with $`L=c+c^\dagger=w_1`$ and $`H=0`$, the sole physical stationary density matrix is $`I_2/2`$, but $`X=\mathrm{diag}(-2,0)`$. The odd operator $`w_1`$ is also stationary. Thus an argument that infers invertibility of the entire four-component Bloch system solely from physical uniqueness would be incomplete.
 
 For each fixed $`N`$, repair this by adding balanced onsite noise of arbitrarily small strength $`\eta>0`$:
 
@@ -122,8 +122,8 @@ Column-vectorize the stationary Bloch-Lyapunov equation. The coefficient matrix 
 \mathcal K_\eta(k)
 =I_2\otimes X_\eta(k)+X_\eta(-k)\otimes I_2,
 \qquad
-\mathcal K_\eta(k)\operatorname{vec}C_\eta(k)
-=-\operatorname{vec}Y(k).
+\mathcal K_\eta(k)\mathrm{vec}C_\eta(k)
+=-\mathrm{vec}Y(k).
 ```
 
 It is a $`4\times4`$ matrix with Laurent degree at most $`S`$ in each entry. Here Laurent degree at most $`D`$ means exponents lie in $`[-D,D]`$. Cramer's rule gives
@@ -143,7 +143,7 @@ n_\eta(k)
 &=\frac14v^\dagger[I_2-iC_\eta(-k)]v\\
 &=\frac12+
 \frac{C_{\eta,12}(k)-C_{\eta,21}(k)
-+i\operatorname{tr}C_\eta(k)}4,
++i\mathrm{tr}C_\eta(k)}4,
 \end{aligned}
 ```
 
@@ -189,7 +189,7 @@ For a translation-invariant Gaussian state, normal momentum correlations vanish 
 
 One way to justify this factorization, including singular Gaussian states, is to compare Wick moments: block-diagonal covariance gives all even moments of the product of its Gaussian marginals, while all odd block moments vanish. These moments determine the density matrix. Equivalently, full-rank Gaussian exponentials split into commuting quadratic block terms and the general case follows by a limit.
 
-The target factors in the same blocks. Since $`\cos(-k)=\cos k`$, a two-mode block target is either $`|00\rangle`$ or $`|11\rangle`$. Let $`\Pi_B`$ be its rank-one target projector and $`F_{\eta,B}=\operatorname{Tr}(\sigma_{\eta,B}\Pi_B)`$. Then
+The target factors in the same blocks. Since $`\cos(-k)=\cos k`$, a two-mode block target is either $`|00\rangle`$ or $`|11\rangle`$. Let $`\Pi_B`$ be its rank-one target projector and $`F_{\eta,B}=\mathrm{Tr}(\sigma_{\eta,B}\Pi_B)`$. Then
 
 ```math
 F_\eta=\prod_BF_{\eta,B}.
@@ -198,7 +198,7 @@ F_\eta=\prod_BF_{\eta,B}.
 If $`P_k`$ is the projector onto the correct occupation of mode $`k\in B`$, then $`\Pi_B\le P_k`$. Therefore its wrong-occupation probability obeys
 
 ```math
-e_\eta(k)=\operatorname{Tr}[\sigma_{\eta,B}(I-P_k)]
+e_\eta(k)=\mathrm{Tr}[\sigma_{\eta,B}(I-P_k)]
 \le1-F_{\eta,B}.
 ```
 

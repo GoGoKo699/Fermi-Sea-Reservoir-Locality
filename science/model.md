@@ -132,5 +132,5 @@ The argument starts by turning global overlap into a bounded total error in mome
 
 The rational covariance formalism and approximation mechanism have substantial prior literature. The [related-work account](../references/RELATED_WORK.md) identifies those ingredients and the distinction between exact local stabilization, Gaussian state approximation and the optimized finite-accuracy range question considered here.
 
-Continue with [Gaussian stationarity](gaussian_stationarity.md), or read the scalar [range lower bound](range_lower_bound.md) first. The [physical interpretation](interpretation.md) explains why global accuracy, spatial reach, precision and time enter differently.
+Continue with [Gaussian stationarity](gaussian_stationarity.md), or read the scalar [range lower bound](range_lower_bound.md) first. The [physical interpretation](interpretation.md) explains why global accuracy, spatial reach, precision and time enter differently. For a guided route from the master-equation foundations, use the [anchor bridge](../learning/ANCHOR_BRIDGE.md) and [30-milestone map](../learning/MILESTONES.md).
 

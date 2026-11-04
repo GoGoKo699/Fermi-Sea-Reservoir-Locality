@@ -13,10 +13,13 @@ This repository determines the spatial range needed for a time-independent, one-
 - science/interpretation.md: physical meaning and boundaries of the spatial conclusion.
 - references/RELATED_WORK.md: closest primary literature, inherited ingredients and the scope of the contribution.
 - references/references.bib: structured primary bibliography.
+- learning/ANCHOR_BRIDGE.md: the single educational anchor, Breuer and Petruccione's The Theory of Open Quantum Systems (2002), its relevant reading route and the bridge to this project's assumptions and proofs.
+- learning/MILESTONES.md: exactly 30 project-intrinsic understanding targets with background/preliminaries and narrative/innovation phases, dependencies, conceptual connections and source pointers.
 
 ## Routes by reader intention
 
 For the scientific story, read README.md, science/model.md and science/interpretation.md.
+For study, start with learning/ANCHOR_BRIDGE.md and follow learning/MILESTONES.md. Use the linked canonical science for precise claims. The selected textbook supplies foundations; the repository and primary papers supply the additional fermionic and approximation arguments.
 For the converse, read science/gaussian_stationarity.md followed by science/range_lower_bound.md. The scalar root argument can also be read first.
 For a concrete reservoir, read science/reservoir_construction.md and science/preparation_costs.md together.
 For attribution or novelty comparisons, consult references/RELATED_WORK.md before describing any ingredient as new.

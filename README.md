@@ -42,6 +42,12 @@ For context, start with the [related-work comparison](references/RELATED_WORK.md
 
 The locality convention is fermionic. A Jordan–Wigner representation can attach spin strings to local fermionic operators, so this theorem is not a statement about the range of spin-local reservoirs. Persistent auxiliary modes, enlarged unit cells, feedback, nonlinear jumps and time-dependent control are outside the stated model.
 
+## Study the project
+
+The educational anchor is Heinz-Peter Breuer and Francesco Petruccione, *The Theory of Open Quantum Systems* (2002; first paperback 2007). Its master-equation framework supplies the starting point for understanding how a reservoir changes a state and selects its stationary limit.
+
+Start with the [anchor bridge](learning/ANCHOR_BRIDGE.md), which translates that framework into the fermionic model and identifies the additional arguments developed here. Then follow the [30-milestone map](learning/MILESTONES.md), progressing from the physical ingredients to the converse, construction and overall resource law. The proof pages remain the direct route to technical details.
+
 ## Reproduce the finite checks
 
 From the repository root, with Python 3.12:
