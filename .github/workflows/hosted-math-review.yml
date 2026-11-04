@@ -10,7 +10,7 @@ concurrency:
 jobs:
   capture:
     if: github.repository == 'GoGoKo699/Fermi-Sea-Reservoir-Locality'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     env:
       SCIENCE_REVISION: 06c965bc030321501bd2ad3efc30d33af5fc7412
