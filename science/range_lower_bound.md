@@ -115,7 +115,7 @@ h_z(x):=\left|\log\left|\frac{x+z}{x-z}\right|\right|,
 \qquad x>0.
 ```
 
-At a real pole the value is $`+\infty`$; the resulting singularity is integrable. If $`z=0`$ or $`\operatorname{Re}z=0`$, the function is identically zero. Otherwise $`h_z`$ is nonnegative, increases on $`(0,|z|)`$, decreases on $`(|z|,\infty)`$, and
+At a real pole the value is $`+\infty`$; the resulting singularity is integrable. If $`z=0`$ or $`\mathrm{Re}z=0`$, the function is identically zero. Otherwise $`h_z`$ is nonnegative, increases on $`(0,|z|)`$, decreases on $`(|z|,\infty)`$, and
 
 ```math
 \int_0^\infty h_z(x)\,\frac{dx}{x}\le\frac{\pi^2}{2}.
