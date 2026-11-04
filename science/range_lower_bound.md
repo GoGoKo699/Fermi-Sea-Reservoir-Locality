@@ -146,7 +146,7 @@ This proves the continuous root budget. $`\square`$
 
 ### Lemma 2: discrete root budget after at most two deletions
 
-Let $`x_{a-1}<x_a<\cdots<x_{b+1}`$ be positive numbers and let
+Let $`x_{a-1}\lt x_a\lt\cdots\lt x_{b+1}`$ be positive numbers and let
 
 ```math
 w_j:=\log(x_{j+1}/x_j),\qquad a-1\le j\le b,
@@ -161,7 +161,7 @@ be nonincreasing in $`j`$. For each root $`z`$, there is a set $`D_z\subseteq\{a
 
 The bound remains true if any additional nodes are removed.
 
-**Proof with boundary prescription.** If $`h_z=0`$, take $`D_z=\varnothing`$. Otherwise put $`r=|z|`$. If $`r<x_{a-1}`$, use the decreasing branch throughout and make no deletion. If $`r\ge x_{b+1}`$, use the increasing branch throughout and make no deletion. In the remaining case choose the unique $`\ell\in\{a-1,\ldots,b\}`$ with $`x_\ell\le r<x_{\ell+1}`$, and delete
+**Proof with boundary prescription.** If $`h_z=0`$, take $`D_z=\varnothing`$. Otherwise put $`r=|z|`$. If $`r\lt x_{a-1}`$, use the decreasing branch throughout and make no deletion. If $`r\ge x_{b+1}`$, use the increasing branch throughout and make no deletion. In the remaining case choose the unique $`\ell\in\{a-1,\ldots,b\}`$ with $`x_\ell\le r\lt x_{\ell+1}`$, and delete
 
 ```math
 D_z=\{\ell,\ell+1\}\cap\{a,\ldots,b\}.
