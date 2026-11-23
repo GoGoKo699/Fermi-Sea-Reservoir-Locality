@@ -4,7 +4,7 @@
 
 The target has a sharp boundary between occupied and empty momentum modes. On a finite ring, a reservoir need not reproduce that boundary as an exact function of continuous momentum. It must nevertheless prepare the whole finite many-body state with the required overlap.
 
-For fixed global overlap, a stationary Gaussian reservoir needs a range proportional to $`(\log N)^2`$, up to constants. The converse allows coefficients that depend on $`N`$, arbitrarily many translated jump families, arbitrarily small damping rates and arbitrarily long waiting. Those freedoms cannot remove the spatial requirement.
+For fixed global overlap, a stationary Gaussian reservoir needs jump radius proportional to $`(\log N)^2`$, up to constants. The [converse](jump_radius.md) allows coefficients that depend on $`N`$, arbitrarily many translated jump families, arbitrarily small damping rates, arbitrarily long waiting, and unrestricted translation-invariant quadratic Hamiltonians.
 
 The construction shows that this range order is sufficient. It uses only two translated jump families and a fixed nearest-neighbor Hamiltonian. This identifies a spatial feasibility threshold within the [specified Gaussian model](model.md).
 
@@ -32,7 +32,7 @@ The lower proof uses precisely this aggregate control. It removes the limited se
 
 ## Where the two logarithms enter
 
-Near a Fermi point, the tangent variable $`x=\tan(q/2)`$ turns the occupation odds into a rational function. Bounded generator range limits the number of its polynomial roots.
+Near a Fermi point, the tangent variable $`x=\tan(q/2)`$ turns the dissipative rate odds into a rational function. The jump radius limits the number of its polynomial roots. Stationarity lets those rates inherit the error budget on physical occupations.
 
 Across the retained momentum scales, accurate modes require a logarithmic odds contrast of order $`\log N`$. The logarithmic measure of those scales is itself of order $`\log N`$. Their weighted contribution is therefore of order $`(\log N)^2`$.
 
@@ -53,7 +53,7 @@ Long waiting is a separate cost. For the same construction, the slowest occupati
 
 The complementary Fock state attains this minimum. The formula explains the construction's actual slow preparation without assuming a Gaussian initial state or identifying occupation rates with the full Liouvillian spectral gap.
 
-The [resource account](preparation_costs.md) separates the actual worst-case curve, a sufficient time based on the actual minimum rate, and the looser elementary guarantee. Improving preparation time at the optimal range remains a distinct optimization problem.
+The [resource account](preparation_costs.md) separates the actual worst-case curve, a sufficient time based on the actual minimum rate, and the looser elementary guarantee. With a rate cap, the [paired time converse](https://github.com/GoGoKo699/Fermi-Sea-Preparation-Time/blob/main/science/paired_reservoirs.md) shows that this time order is optimal at logarithm-squared jump radius. The intermediate radius–time frontier remains open.
 
 ## Relation to exact locality results
 

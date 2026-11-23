@@ -2,7 +2,7 @@
 
 A stationary reservoir prepares a many-body state by making it the attracting steady state of an open-system evolution. For a critical Fermi sea, the target occupation changes discontinuously at the Fermi points. The question is how much spatial reach a reservoir needs when the target is approximated on a finite ring.
 
-The resource studied here is the range of the effective Gaussian Lindblad generator. The accuracy criterion is the overlap with the entire target state. Coefficients may depend on system size, and the stationary feasibility problem puts no restriction on waiting time.
+The primary resource is the radius of the linear jumps in the effective Gaussian Lindblad generator. The accuracy criterion is the overlap with the entire target state. Coefficients may depend on system size, and the stationary feasibility problem puts no restriction on waiting time.
 
 ## Target and fidelity
 
@@ -56,7 +56,7 @@ L_{\mu,x}
 +v_{\mu,r}c_{x+r}^\dagger\right).
 ```
 
-Both coefficients and the number of jump families may depend on $`N`$. The charged radius is
+Both coefficients and the number of jump families may depend on $`N`$. The common-radius convention used in the covariance-degree proof is
 
 ```math
 R=\max\{R_H,R_J\}.
@@ -70,27 +70,25 @@ There are no additional persistent modes per cell. Translation invariance is wit
 
 ## Main theorem
 
-Let $`R_{\min}(N,F_0)`$ be the smallest common radius among the allowed generators whose stationary state has overlap at least $`F_0`$. For every fixed $`F_0\in(0,1)`$,
+Let $`R_{J,\min}(N,F_0)`$ be the smallest jump radius among the allowed generators whose stationary state has overlap at least $`F_0`$, allowing any translation-invariant quadratic Hamiltonian regardless of its coupling range or strength. For every fixed $`F_0\in(0,1)`$,
 
 ```math
 \boxed{
-R_{\min}(N,F_0)=
+R_{J,\min}(N,F_0)=
 \Theta_{F_0}\!\left((\log N)^2\right)
 \qquad (N=4M+2\to\infty).
 }
 ```
 
-The statement has two complementary parts.
+The same order holds for the minimum common radius $`R_{\min}(N,F_0)`$, since the matching construction also has bounded Hamiltonian range.
 
 | Part | Scope and conclusion | Proof |
 |---|---|---|
-| Converse | Every allowed Gaussian generator, including pairing, needs common radius of order at least the square of the logarithm. Rates and waiting time are unrestricted. | [Finite range lower bound](range_lower_bound.md), with the [Gaussian covariance reduction](gaussian_stationarity.md) |
+| Converse | Every allowed Gaussian generator, including pairing, needs jump radius of order at least the square of the logarithm. Rates and waiting time are unrestricted. | [Jump-radius converse](jump_radius.md) |
 | Construction | Two translated gain/loss families, together with the fixed nearest-neighbor target Hamiltonian, attain that radius order. | [Explicit reservoir and precision](reservoir_construction.md) |
 | Preparation cost | The same finite-precision construction reaches the target accuracy from every physical initial state. Its worst-case preparation time is very large. | [Convergence and resource accounting](preparation_costs.md) |
 
-The [finite-size converse](range_lower_bound.md) gives an explicit elementary bound for every allowed $`N\ge1026`$. Its constants are unoptimized, and its positive part permits a vacuous bound at modest size or very small required overlap.
-
-A sharper constant holds in the subclass of separate creation and annihilation jumps with a number-conserving Hamiltonian. In that subclass, the Hamiltonian commutes with every momentum occupation, so its range is irrelevant to the stationary occupation law. For general pairing Hamiltonians, coherent range must be charged.
+The [finite-size jump-radius converse](jump_radius.md) gives an explicit elementary bound for every allowed $`N\ge1026`$. Its constants are unoptimized, and its positive part permits a vacuous bound at modest size or very small required overlap. The [original common-radius bound](range_lower_bound.md#model-fidelity-and-finite-size-statement) remains available through the rational Gaussian covariance. Its separate gain/loss specialization uses the sharper finite-size error budget for product occupations.
 
 ## Constructive resource statement
 
@@ -124,13 +122,13 @@ The momentum occupation rates remain at most $`\Gamma`$. For fixed $`\epsilon`$ 
 =(1+o(1))(\log N)^3.
 ```
 
-Thus its slow preparation is a property of the construction, not merely an artifact of a loose sufficient-time estimate. The spatial converse does not establish an optimal time versus range tradeoff.
+The exact worst-case law describes the actual construction. With a bounded momentum-pair dissipation rate, the [paired time converse](https://github.com/GoGoKo699/Fermi-Sea-Preparation-Time/blob/main/science/paired_reservoirs.md) establishes the same time order at logarithm-squared jump radius over all reservoirs in the model.
 
 ## Reading the proof
 
-The argument starts by turning global overlap into a bounded total error in momentum occupations. Stationary Gaussian covariance then makes those occupations rational functions of bounded degree. A discrete root-potential estimate forces a square-logarithmic degree under that total-error constraint. Finally, geometric-root polynomials realize the matching degree with positive gain and loss rates.
+The argument starts by turning global overlap into a bounded total error in momentum occupations. The stationary pair covariance then transfers that error budget to the ratio of two scalar rate polynomials whose degree depends only on jump radius. A discrete root-potential estimate forces a square-logarithmic degree under that total-error constraint. Geometric-root polynomials realize the matching degree with positive gain and loss rates.
 
 The rational covariance formalism and approximation mechanism have substantial prior literature. The [related-work account](../references/RELATED_WORK.md) identifies those ingredients and the distinction between exact local stabilization, Gaussian state approximation and the optimized finite-accuracy range question considered here.
 
-Continue with [Gaussian stationarity](gaussian_stationarity.md), or read the scalar [range lower bound](range_lower_bound.md) first. The [physical interpretation](interpretation.md) explains why global accuracy, spatial reach, precision and time enter differently. For a guided route from the master-equation foundations, use the [anchor bridge](../learning/ANCHOR_BRIDGE.md) and [30-milestone map](../learning/MILESTONES.md).
+Continue with the [jump-radius converse](jump_radius.md), or read the scalar [range lower bound](range_lower_bound.md) first. The [physical interpretation](interpretation.md) explains why global accuracy, spatial reach, precision and time enter differently. For a guided route from the master-equation foundations, use the [anchor bridge](../learning/ANCHOR_BRIDGE.md) and [30-milestone map](../learning/MILESTONES.md).
 

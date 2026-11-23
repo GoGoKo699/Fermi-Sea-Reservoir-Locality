@@ -1,6 +1,6 @@
 # From open-system dynamics to a spatial locality theorem
 
-Consider a ring of fermionic sites whose reservoir continuously adds and removes particles. The task is to make its attracting stationary state approximate the entire half-filled Fermi sea. The question is how far the Hamiltonian couplings and reservoir jumps must reach, even when arbitrarily long waiting is allowed.
+Consider a ring of fermionic sites whose reservoir continuously adds and removes particles. The task is to make its attracting stationary state approximate the entire half-filled Fermi sea. The question is how far the reservoir jumps must reach, even with unrestricted Hamiltonian couplings and arbitrarily long waiting.
 
 This bridge connects the selected educational anchor to that question. The [30-milestone map](MILESTONES.md) organizes the project's understanding targets and dependencies. The [model and main theorem](../science/model.md) remain the authoritative statement of the result.
 
@@ -17,7 +17,7 @@ Read the project's model alongside the relevant parts of the book; the complete 
 | Reading purpose | Anchor location | Connection to this project |
 |---|---|---|
 | Interpret states and measurement probabilities | **Chapter 2, “Quantum Probability”** ([publisher chapter](https://academic.oup.com/book/27757/chapter-abstract/197977987)): density matrices, composite systems, quantum operations and effects | Understand the stationary density matrix and the probability of the target-state projector. |
-| Understand the dynamical model | **Chapter 3, “Quantum Master Equations,” pp. 109–218** ([publisher chapter](https://academic.oup.com/book/27757/chapter-abstract/197978616)): completely positive dynamical semigroups and quantum Markov processes | Read the Hamiltonian and jump terms in the [allowed generator](../science/model.md#allowed-generators-and-charged-range), and distinguish a stationary state from convergence toward it. |
+| Understand the dynamical model | **Chapter 3, “Quantum Master Equations,” pp. 109–218**, especially §3.2.2 on generators and §3.3.2 on relaxation ([publisher chapter](https://academic.oup.com/book/27757/chapter-abstract/197978616)) | Read the Hamiltonian and jump terms in the [allowed generator](../science/model.md#allowed-generators-and-charged-range), and distinguish a stationary state from convergence toward it. |
 | Interpret relaxation and model assumptions | Chapter 3's treatment of relaxation and microscopic master-equation derivations | Separate stationary accuracy from preparation time. The project starts from an effective Lindblad generator; its range theorem does not derive the locality of a microscopic system–bath Hamiltonian. |
 
 These are chapter-level reading pointers. The steps connecting them to the reservoir-range theorem are supplied explicitly by the scientific pages below.
@@ -41,7 +41,7 @@ The Hamiltonian term describes coherent evolution; the dissipators describe the 
 | System state | $`\rho(t)`$ describes the full fermionic ring after the environment has been eliminated. Its stationary state is $`\sigma`$, satisfying $`\mathcal L(\sigma)=0`$. |
 | Degrees of freedom | There is one fermionic mode $`c_x`$ per site. Creation and annihilation operators obey canonical anticommutation relations, developed in the [covariance account](../science/gaussian_stationarity.md). |
 | Coherent and dissipative terms | $`H`$ is quadratic and may contain pairing terms. Each jump is linear and may mix creation and annihilation operators. The explicit construction uses separate gain and loss. |
-| Spatial resource | $`R_H`$ is the Hamiltonian coupling range, $`R_J`$ the jump radius, and $`R=\max\{R_H,R_J\}`$ the charged common radius. Translation invariance is by one site. |
+| Spatial resource | $`R_J`$ is the jump radius in the main theorem. The rational-covariance proof uses the common radius $`R=\max\{R_H,R_J\}`$, where $`R_H`$ is the Hamiltonian coupling range. Translation invariance is by one site. |
 | Gaussian covariance and rate scale | $`C`$ denotes the Majorana covariance. The separate symbol $`\Gamma`$ denotes the physical occupation-rate scale in the construction. |
 | Physical states | Density matrices commute with total fermion parity. A projector onto an odd-parity vector is physical; this includes the target with $`N/2=2M+1`$ particles. |
 
@@ -59,7 +59,7 @@ The specialized reduction starts with Majorana operators, which are Hermitian co
 
 Here $`X`$ contains coherent motion and damping, and $`Y`$ supplies the reservoir's covariance source. This quasi-free formalism is an imported research ingredient, with normalization and signs fixed in [Gaussian stationarity](../science/gaussian_stationarity.md#exact-real-space-equation).
 
-Translation invariance turns that equation into a small matrix problem at each momentum. Finite spatial range bounds the Laurent degree of its coefficients. Solving the stationary equation therefore makes the occupations rational functions with a controlled degree. The project's proof includes an onsite-noise regularization before taking a fixed-size limit: uniqueness among physical states alone does not justify inverting the unrestricted covariance system. That qualification is essential to the full pairing-inclusive converse.
+Translation invariance turns that equation into a small matrix problem at each momentum. In the common-radius proof, solving the stationary equation makes the occupations rational functions whose degree counts both ranges. Onsite noise supplies a strict covariance inverse before a fixed-size limit. A stronger [jump-radius proof](../science/jump_radius.md) uses the eigenbasis of the stationary covariance on each momentum pair. The diagonal coherent commutator vanishes in that basis, so positivity bounds the wrong dissipative rate by the pair's actual occupation error. Pair parity ensures that the total dissipative rate is positive under physical uniqueness.
 
 ### Whole-state fidelity gives an aggregate error budget
 
@@ -79,9 +79,9 @@ Thus fixed nonzero global overlap permits only a bounded total error as the ring
 
 ### The finite-grid rational obstruction
 
-Near a Fermi point, a tangent change of variable converts the occupation odds into a ratio of ordinary polynomials. The [range lower bound](../science/range_lower_bound.md) then compares two quantities: the contrast required by accurate occupied and empty modes, and the contrast that a fixed number of polynomial roots can supply across momentum scales.
+Near a Fermi point, a tangent change of variable converts the dissipative odds into a ratio of ordinary polynomials whose degree is controlled by jump radius. The [range lower bound](../science/range_lower_bound.md) compares the contrast required by accurate occupied and empty modes with the contrast a fixed number of polynomial roots can supply across momentum scales.
 
-The proof retains the aggregate error criterion. It removes the set of inaccurate modes controlled by the aggregate error budget and the sample points adjacent to root peaks; those deletions prevent an arbitrarily near-grid root from producing an uncontrolled discrete spike. The number of removed modes can grow with system size, while their discarded logarithmic weight remains controlled. The remaining weighted contrast requires order $`(\log N)^2`$ roots. Together with the covariance degree bound, this yields the spatial converse. This finite-grid argument and its application to the optimized reservoir class are project-specific derivations built on established rational-approximation ideas.
+The proof retains the aggregate error criterion. It removes the inaccurate modes covered by the aggregate error budget and the sample points adjacent to root peaks. Those deletions prevent an arbitrarily near-grid root from producing an uncontrolled discrete spike. The number of removed modes can grow with system size, while their discarded logarithmic weight remains controlled. The remaining weighted contrast requires order $`(\log N)^2`$ roots, which forces the same order of jump radius.
 
 ## Construction, accuracy and waiting time
 
@@ -100,7 +100,7 @@ The rate ratio sets the stationary occupation; their sum sets occupation relaxat
 The project's [matching construction](../science/reservoir_construction.md) chooses geometric-root polynomials in $`\cos k`$ as the gain/loss amplitudes. Their squares give nonnegative gain and loss rates, with a strictly positive total occupation rate. Their Fourier support gives actual finite-radius jumps. Combined with the converse, the project-specific result is
 
 ```math
-R_{\min}(N,F_0)=\Theta_{F_0}\!\left((\log N)^2\right),
+R_{J,\min}(N,F_0)=\Theta_{F_0}\!\left((\log N)^2\right),
 \qquad N=4M+2\to\infty,
 ```
 
@@ -108,7 +108,7 @@ for each fixed $`F_0\in(0,1)`$, under the assumptions in the model.
 
 The supplied realization also accounts for its coefficients and dynamics. For final infidelity $`\epsilon`$, a sufficient jump radius is $`O(\log^2(N/\epsilon))`$ and a sufficient absolute precision per independent normalized coefficient is $`O(\log^3(N/\epsilon))`$ fractional bits. Downward rounding preserves positive damping and the stationary accuracy. These are constructive upper bounds; the spatial theorem holds at fixed overlap and does not claim an optimal precision frontier.
 
-The [preparation proof](../science/preparation_costs.md#arbitrary-initial-states) covers every physical initial state, including non-Gaussian states. Commuting wrong-occupation projectors give an operator union bound, so the scalar relaxation equations control whole-state fidelity without assuming that the initial state factors. At fixed accuracy, this particular construction has worst-case preparation time $`\Gamma^{-1}\exp[\Theta((\log N)^3)]`$. Its slow dynamics and the exact worst-case fidelity curve are established separately from the all-reservoir spatial lower bound.
+The [preparation proof](../science/preparation_costs.md#arbitrary-initial-states) covers every physical initial state, including non-Gaussian states. Commuting wrong-occupation projectors give an operator union bound, so the scalar relaxation equations control whole-state fidelity without assuming that the initial state factors. At fixed accuracy, this construction has worst-case preparation time $`\Gamma^{-1}\exp[\Theta((\log N)^3)]`$. The [paired time converse](https://github.com/GoGoKo699/Fermi-Sea-Preparation-Time/blob/main/science/paired_reservoirs.md) uses physical pair parity as a relaxation witness and shows that the time order is unavoidable at this radius under a bounded pair rate.
 
 ## Scientific routes and primary sources
 
