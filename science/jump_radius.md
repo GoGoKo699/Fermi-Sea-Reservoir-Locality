@@ -36,22 +36,22 @@ Diagonalize the stationary $`M`$ with eigenvalues $`m_i`$. The commutator has ze
 ```math
 z^\dagger Gz
 \le\left(\sum_i |z_i|\sqrt{m_i D_{ii}}\right)^2
-\le (z^\dagger Mz)\operatorname{Tr}D.
+\le (z^\dagger Mz)\mathrm{Tr}D.
 ```
 
-Since $`B=D-G`$ has diagonal entries $`(1-m_i)D_{ii}`$, the same argument gives $`B\preceq(\operatorname{Tr}D)(I-M)`$. In the original $`d`$ frame define the scalar rates
+Since $`B=D-G`$ has diagonal entries $`(1-m_i)D_{ii}`$, the same argument gives $`B\preceq(\mathrm{Tr}D)(I-M)`$. In the original $`d`$ frame define the scalar rates
 
 ```math
 \begin{aligned}
 a(k)&=G_{11}+B_{22}=\sum_\mu\left(|v_\mu(k)|^2+|v_\mu(-k)|^2\right),\\
 b(k)&=B_{11}+G_{22}=\sum_\mu\left(|u_\mu(k)|^2+|u_\mu(-k)|^2\right),\\
-g(k)&=a(k)+b(k)=\operatorname{Tr}D.
+g(k)&=a(k)+b(k)=\mathrm{Tr}D.
 \end{aligned}
 ```
 
 Both rates are nonnegative trigonometric polynomials of degree at most $`2R_J`$. If $`g(k)=0`$ on a distinct pair, every jump on that pair vanishes. The pair's physical parity then commutes with the Hamiltonian and every jump, and is conserved. Time averaging the state evolution from each of the two pair-parity sectors yields distinct physical stationary states. Thus physical uniqueness implies $`g(k)>0`$ on every distinct pair.
 
-On an occupied target pair, the covariance target in the $`d`$ frame is $`\operatorname{diag}(1,0)`$. The matrix inequalities give $`b(k)/g(k)\le (1-M_{11})+M_{22}`$. On an empty target pair, they give $`a(k)/g(k)\le M_{11}+(1-M_{22})`$. In both cases the wrong occupation of the scalar score $`a(k)/g(k)`$ is bounded by the sum of the two physical occupation errors. The target pair projector is dominated by either correct-occupation projector. If its squared overlap is $`F_{\{k,-k\}}`$, the summed error is therefore at most $`2(1-F_{\{k,-k\}})`$. Product fidelity bounds the summed scalar error on any collection of distinct pairs by $`-2\log F_0`$. The scalar score measures dissipative selectivity. The actual occupations can also depend on the Hamiltonian.
+On an occupied target pair, the covariance target in the $`d`$ frame is $`\mathrm{diag}(1,0)`$. The matrix inequalities give $`b(k)/g(k)\le (1-M_{11})+M_{22}`$. On an empty target pair, they give $`a(k)/g(k)\le M_{11}+(1-M_{22})`$. In both cases the wrong occupation of the scalar score $`a(k)/g(k)`$ is bounded by the sum of the two physical occupation errors. The target pair projector is dominated by either correct-occupation projector. If its squared overlap is $`F_{\{k,-k\}}`$, the summed error is therefore at most $`2(1-F_{\{k,-k\}})`$. Product fidelity bounds the summed scalar error on any collection of distinct pairs by $`-2\log F_0`$. The scalar score measures dissipative selectivity. The actual occupations can also depend on the Hamiltonian.
 
 ## Applying the discrete root bound
 
