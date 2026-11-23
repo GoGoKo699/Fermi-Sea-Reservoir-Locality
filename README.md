@@ -2,21 +2,21 @@
 
 **How far must a stationary Gaussian reservoir reach to prepare an entire critical Fermi sea with fixed accuracy?**
 
-For a periodic hopping chain with one fermionic mode per site, the minimum common range of the quadratic Hamiltonian and linear Lindblad jumps grows as
+For a periodic hopping chain with one fermionic mode per site, the minimum jump radius grows as
 
 ```math
-\boxed{R_{\min}(N,F_0)=\Theta_{F_0}\!\left((\log N)^2\right)}
+\boxed{R_{J,\min}(N,F_0)=\Theta_{F_0}\!\left((\log N)^2\right)}
 ```
 
-at every fixed global overlap $`F_0\in(0,1)`$, along the sizes $`N=4M+2`$. The generator is time independent and invariant under translation by one site. Pairing is allowed, the stationary state is unique, and convergence is required from every physical initial state. Both coherent and dissipative range are counted.
+at every fixed global overlap $`F_0\in(0,1)`$, along the sizes $`N=4M+2`$. The generator is time independent and invariant under translation by one site. General linear jumps and pairing Hamiltonians are allowed. The bound counts jump radius even with unrestricted coherent range and strength. The preparation model requires convergence from every physical initial state, and the stationary converse needs only uniqueness.
 
-The lower bound permits arbitrary finite coefficients, any finite number of translated jump families and unlimited waiting. A matching construction uses two gain/loss families, bounded occupation rates and explicitly finite coefficient precision. Its convergence is slow, so the spatial optimum does not by itself provide a fast preparation method.
+The lower bound permits arbitrary finite coefficients, any finite number of translated jump families and unlimited waiting. A matching construction uses two gain/loss families, bounded occupation rates and explicitly finite coefficient precision. With a bounded pair dissipation rate, [Fermi-Sea Preparation Time](https://github.com/GoGoKo699/Fermi-Sea-Preparation-Time/blob/main/science/paired_reservoirs.md) proves that the cubic-logarithmic exponent of its waiting time is unavoidable at logarithm-squared radius and that polynomial time requires nearly linear jump radius.
 
 ## Results and scope
 
 | Question | Result | Scientific account |
 |---|---|---|
-| What spatial range is necessary? | An explicit finite-size rational-degree bound implies the square-logarithmic common-radius lower bound, including general pairing. | [Range lower bound](science/range_lower_bound.md) and [Gaussian stationarity](science/gaussian_stationarity.md) |
+| What spatial range is necessary? | The jump radius is at least logarithm-squared, even with unrestricted coherent range and strength. | [Jump-radius converse](science/jump_radius.md) and [finite-grid root bound](science/range_lower_bound.md) |
 | Can that range be attained? | Positive gain and loss filters with geometrically spaced polynomial roots attain radius $`O(\log^2(N/\epsilon))`$. | [Reservoir construction](science/reservoir_construction.md) |
 | Are exact real coefficients necessary? | $`O(\log^3(N/\epsilon))`$ fractional bits per independent normalized coefficient suffice; the coefficient description uses $`O(\log^5(N/\epsilon))`$ bits. | [Finite precision](science/reservoir_construction.md#dyadic-rounding-theorem) |
 | How long does this realization take? | At fixed requested infidelity, its actual worst-case preparation time has $`\log(\Gamma t_{\mathrm{worst}})=(1+o(1))(\log N)^3`$, including the rounded realization. | [Preparation costs](science/preparation_costs.md) |
@@ -32,8 +32,8 @@ Here $`F=\langle\mathrm{FS}_N|\rho|\mathrm{FS}_N\rangle`$ is the squared pure-ta
 The [model](science/model.md) is the authoritative entry point for the assumptions, fidelity convention and main theorem.
 
 1. **[Model and spatial threshold](science/model.md):** define the target, allowed generators and charged resources.
-2. **[Gaussian stationarity](science/gaussian_stationarity.md):** derive rational occupations with controlled degree, including asymmetric momentum populations and pairing; handle the stability exception using vanishing onsite noise.
-3. **[Finite range lower bound](science/range_lower_bound.md):** convert global fidelity into an aggregate error budget and prove the discrete root-potential inequality.
+2. **[Jump-radius converse](science/jump_radius.md):** transfer stationary accuracy to two scalar rate polynomials by working in the momentum-pair covariance eigenbasis.
+3. **[Finite range lower bound](science/range_lower_bound.md):** prove the discrete root-potential inequality. The [Gaussian stationarity](science/gaussian_stationarity.md) account retains the common-radius proof via rational occupations.
 4. **[Explicit reservoir and precision](science/reservoir_construction.md):** construct the matching filters and show how finite dyadic coefficients preserve their accuracy and damping.
 5. **[Convergence and resource accounting](science/preparation_costs.md):** derive preparation bounds for arbitrary physical initial states and identify the construction's actual slow scale.
 6. **[Physical interpretation](science/interpretation.md):** connect the two logarithms, whole-state accuracy and the separate costs of range, time and precision.

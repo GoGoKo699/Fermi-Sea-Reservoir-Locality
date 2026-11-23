@@ -1,6 +1,6 @@
 # Preparation time and resource accounting
 
-The [explicit reservoir](reservoir_construction.md) attains the optimal spatial order. This page accounts for its dynamics and coefficient precision. The time statements describe that construction; the [range converse](range_lower_bound.md) applies to the full allowed Gaussian class.
+The [explicit reservoir](reservoir_construction.md) attains the optimal jump-radius order. This page accounts for its dynamics and coefficient precision. The [paired time converse](https://github.com/GoGoKo699/Fermi-Sea-Preparation-Time/blob/main/science/paired_reservoirs.md) proves the matching time order at this radius over all admissible reservoirs with a bounded momentum-pair dissipation rate.
 
 Let $`\widehat a_k,\widehat b_k`$ be the rounded gain and loss rates, $`\widehat g_k=\widehat a_k+\widehat b_k`$, and $`\widehat e_k`$ the stationary wrong-occupation probabilities. The construction proves
 
@@ -81,7 +81,7 @@ A trace-distance target follows by using the corresponding squared fidelity-erro
 
 ## Exact worst-case fidelity curve
 
-The occupation-diagonal algebra evolves as independent two-state classical gain/loss chains. This follows directly after Fourier mixing the translated jump labels. The target Hamiltonian is diagonal in occupations. Initial off-diagonal matrix elements do not contribute to the target population.
+The occupation-diagonal algebra evolves as independent two-state classical gain/loss chains. This follows directly after Fourier mixing the translated jump labels. The target Hamiltonian commutes with this algebra, so setting the preparation Hamiltonian to zero gives the same whole-state preparation curve. Initial off-diagonal matrix elements do not contribute to the target population.
 
 Starting a mode in the wrong bit gives target-bit probability
 

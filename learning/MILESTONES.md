@@ -97,7 +97,7 @@ Dependencies below are earlier milestones whose ideas are used directly. Each ph
 
 **Dependencies and story role.** M03, M06. This translates the physical resource into a quantity usable in a proof.
 
-**Conceptual connection.** More translated jump families change coefficients but cannot increase the Laurent degree at fixed support. General pairing Hamiltonians contribute their own charged range.
+**Conceptual connection.** More translated jump families change coefficients but cannot increase the Laurent degree at fixed support. Pairing Hamiltonians contribute to the degree of the covariance equation. The jump-radius proof uses the degree of the rates themselves.
 
 **Sources.** [Range conventions](../science/model.md#allowed-generators-and-charged-range); [Gram support and the Bloch equation](../science/gaussian_stationarity.md#range-accounting-and-the-bloch-equation).
 
@@ -153,7 +153,7 @@ Dependencies below are earlier milestones whose ideas are used directly. Each ph
 
 **Central question.** What exactly is optimized, and what is deliberately left unrestricted?
 
-**Understanding target.** State the target, fixed overlap threshold, allowed generator class, common radius and initial-state requirement together. Explain why size-dependent coefficients, arbitrary channel count and unrestricted waiting are compatible with a meaningful minimum-range question.
+**Understanding target.** State the target, fixed overlap threshold, allowed generator class, jump radius and initial-state requirement together. Explain why size-dependent coefficients, arbitrary channel count, unrestricted Hamiltonian range and unrestricted waiting are compatible with a meaningful minimum jump-radius question.
 
 **Dependencies and story role.** M05, M07, M09, M10, M11. This is the background synthesis: the objects and distinctions now form one precise operational task.
 
@@ -193,7 +193,7 @@ Dependencies below are earlier milestones whose ideas are used directly. Each ph
 
 **Understanding target.** Connect the two-component Majorana symbol to a four-component linear system, then use determinant degree counting to bound the rational occupation odds. Keep track of Hamiltonian range, Gram range and the total numerator-plus-denominator root count $`d\le16S`$.
 
-**Dependencies and story role.** M07, M10, M14. This makes the converse apply to the whole stated Gaussian class.
+**Dependencies and story role.** M07, M10, M14. This establishes the covariance route to the common-radius converse. M20 uses a separate degree bound to isolate jump radius.
 
 **Conceptual connection.** The system size increases the number of sampled momenta, but the fixed one-mode unit cell keeps the local matrix dimension fixed. Additional persistent bands would change this reduction.
 
@@ -251,13 +251,13 @@ Dependencies below are earlier milestones whose ideas are used directly. Each ph
 
 **Central question.** What physical generators are excluded by the rational-degree lower bound?
 
-**Understanding target.** Translate the scalar result into the common-radius lower bound for all allowed Gaussian generators. Explain the stronger separate gain/loss constant and why its irrelevant number-conserving Hamiltonian is different from a general pairing Hamiltonian whose range must be charged.
+**Understanding target.** Translate the scalar result into both the common-radius and jump-radius lower bounds. In the paired proof, use the stationary covariance eigenbasis to transfer error to the scalar dissipative odds. Explain how conservation of pair parity would contradict a unique stationary state if the pair had zero dissipation.
 
-**Dependencies and story role.** M12, M15, M19. This completes the converse branch of the project.
+**Dependencies and story role.** M12, M13, M15, M19. This completes the converse branch of the project.
 
-**Conceptual connection.** The lower bound permits arbitrary finite coefficients and arbitrarily long waiting. Its force is a spatial obstruction under fixed whole-state accuracy, independent of those freedoms.
+**Conceptual connection.** The lower bound permits arbitrary finite coefficients and arbitrarily long waiting. The vanishing diagonal of the coherent commutator in the stationary covariance eigenbasis makes the rate bound independent of Hamiltonian range or strength.
 
-**Sources.** [Finite-size physical statements](../science/range_lower_bound.md#model-fidelity-and-finite-size-statement); [application of the Gaussian reduction](../science/gaussian_stationarity.md#application-to-the-range-converse).
+**Sources.** [Jump-radius converse](../science/jump_radius.md); [application of the Gaussian reduction](../science/gaussian_stationarity.md#application-to-the-range-converse).
 
 ### M21: Building a legitimate positive reservoir
 
@@ -339,9 +339,9 @@ Dependencies below are earlier milestones whose ideas are used directly. Each ph
 
 **Dependencies and story role.** M23, M24, M26. This gives the construction a quantitative dynamical cost.
 
-**Conceptual connection.** The exact worst-case curve connects the achieved rate to actual preparation time. This construction-specific result does not optimize time over every spatially admissible reservoir.
+**Conceptual connection.** The exact worst-case curve gives the achieved time. A separate converse shows that the cubic-logarithmic exponent is optimal at logarithm-squared jump radius under a bounded pair dissipation rate.
 
-**Sources.** [Actual minimum-rate calculation](../science/preparation_costs.md#actual-minimum-rate-of-the-ideal-filter); [worst-case time bounds](../science/preparation_costs.md#exact-worst-case-fidelity-curve); [pointwise rounding control](../science/reservoir_construction.md#dyadic-rounding-theorem).
+**Sources.** [Actual minimum-rate calculation](../science/preparation_costs.md#actual-minimum-rate-of-the-ideal-filter); [pointwise rounding control](../science/reservoir_construction.md#dyadic-rounding-theorem); [paired time converse](https://github.com/GoGoKo699/Fermi-Sea-Preparation-Time/blob/main/science/paired_reservoirs.md).
 
 ### M28: What the finite calculations establish
 
@@ -371,7 +371,7 @@ Dependencies below are earlier milestones whose ideas are used directly. Each ph
 
 **Central question.** What can be concluded about preparing a critical Fermi sea once all parts of the argument are combined?
 
-**Understanding target.** Explain why the matched bounds establish $`R_{\min}(N,F_0)=\Theta_{F_0}((\log N)^2)`$ at fixed whole-state overlap. State separately the supplied construction's coefficient, precision and time costs, and identify which changes of model or optimization objective remain outside the result.
+**Understanding target.** Explain why the matched bounds establish $`R_{J,\min}(N,F_0)=\Theta_{F_0}((\log N)^2)`$ at fixed whole-state overlap. State separately the supplied construction's coefficient, precision and time costs. Identify the rate cap needed for the companion's time converse.
 
 **Dependencies and story role.** M20, M22, M24, M27, M28, M29. This is the narrative synthesis: a precise resource question, a universal obstruction, a matching realization and its practical limits form one connected scientific account.
 

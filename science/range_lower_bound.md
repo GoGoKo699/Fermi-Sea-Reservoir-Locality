@@ -2,7 +2,7 @@
 
 Fixed overlap with an entire Fermi sea imposes a bounded sum of momentum-occupation errors. It does not impose the same small error on every mode. This account proves a rational-degree lower bound directly from that aggregate constraint, including the exceptional modes and the possible proximity of polynomial roots to sampled momenta.
 
-The [Gaussian stationarity account](gaussian_stationarity.md) converts this scalar degree bound into a bound on reservoir range. The complete operational assumptions are also collected in the [model](model.md). All logarithms are natural.
+The [Gaussian stationarity account](gaussian_stationarity.md) uses the scalar degree bound to control common radius. The [jump-radius converse](jump_radius.md) applies the same bound to physical rates and allows unrestricted coherent coupling range. The complete operational assumptions are collected in the [model](model.md). All logarithms are natural.
 
 ## Model, fidelity, and finite-size statement
 
@@ -102,7 +102,7 @@ R_J\ge
 }
 ```
 
-Thus $`R_J\ge[1/(18\pi^2)+o(1)](\log N)^2`$. The Hamiltonian range need not be charged in this special case because the Hamiltonian commutes with every momentum occupation. The full Gaussian bound does charge it: a jump-only statement with an unrestricted pairing Hamiltonian is not proved here.
+Thus $`R_J\ge[1/(18\pi^2)+o(1)](\log N)^2`$. In this subclass the Hamiltonian commutes with every momentum occupation, and the product state gives the finite-size error budget $`-\log F_0`$. For general pairing, the [jump-radius converse](jump_radius.md) reaches the same leading coefficient with error budget $`-2\log F_0`$.
 
 ## Root-potential estimates
 

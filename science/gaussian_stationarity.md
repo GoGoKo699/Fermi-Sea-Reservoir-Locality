@@ -2,6 +2,8 @@
 
 This account reduces general translation-invariant Gaussian reservoir dynamics to the rational occupations required by the [finite-size scalar converse](range_lower_bound.md). The calculation includes pairing in both the quadratic Hamiltonian and the linear jumps.
 
+This covariance-degree proof concerns common radius. The [jump-radius converse](jump_radius.md) instead compares stationary pair occupations with the scalar gain and loss rates and allows arbitrary Hamiltonian range.
+
 There is one physical fermionic mode per site on a periodic ring, $`N=4M+2`$. Jumps have radius $`R_J`$, the Hamiltonian has coupling range $`R_H`$, and
 
 ```math
@@ -266,11 +268,11 @@ The odds are $`a/b`$. The Möbius conversion above with $`D=2R_J`$ makes numerat
 
 ## Scope and literature
 
-The full Gaussian reduction charges Hamiltonian range as well as jump range. An unrestricted long-range pairing Hamiltonian is outside a jump-radius-only conclusion. By contrast, a translation-invariant number-conserving Hamiltonian cannot change the stationary momentum populations in the separate gain/loss subclass.
+The degree of the rational Gaussian covariance accounts for Hamiltonian range as well as jump range. For jump radius alone, the [paired rate argument](jump_radius.md) uses the stationary covariance eigenbasis and a degree bound on the dissipative rates. In the separate gain/loss subclass, a translation-invariant number-conserving Hamiltonian commutes with the momentum occupations directly.
 
 Physical-sector uniqueness is the only uniqueness assumption used in the limiting argument. The onsite regularization supplies an invertible Bloch equation without assuming that physical uniqueness makes every odd operator decay. No bound uniform in system size is needed on that regularization limit.
 
-This is a stationary spatial converse. It allows arbitrarily weak rates and does not supply a preparation-time bound. The matching upper construction and its time cost are given in [reservoir construction](reservoir_construction.md) and [preparation costs](preparation_costs.md).
+The stationary spatial converse allows arbitrarily weak rates. The matching upper construction and its time cost are given in [reservoir construction](reservoir_construction.md) and [preparation costs](preparation_costs.md). The [paired time converse](https://github.com/GoGoKo699/Fermi-Sea-Preparation-Time/blob/main/science/paired_reservoirs.md) adds a rate cap and an all-input time requirement.
 
 The covariance evolution, Gaussianity, and Bloch-Lyapunov rationality are established ingredients. Their role here is to give an explicit degree bound for the total-error argument, with one fixed physical mode per cell and all coherent range charged. See also the [related-work account](../references/RELATED_WORK.md).
 
