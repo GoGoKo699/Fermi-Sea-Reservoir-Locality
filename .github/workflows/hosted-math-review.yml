@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 25
     env:
-      SCIENCE_REVISION: 0adec004e5594c4754592ee1d31ed9f77878c5d3
+      SCIENCE_REVISION: d1eb60719dd11f1c8e91152b2bfb86707a474a57
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
