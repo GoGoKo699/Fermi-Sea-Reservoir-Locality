@@ -1,0 +1,49 @@
+name: Hosted math review
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+permissions:
+  contents: read
+concurrency:
+  group: hosted-math-review-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  capture:
+    if: github.repository == 'GoGoKo699/Fermi-Sea-Reservoir-Locality'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    env:
+      SCIENCE_REVISION: 0adec004e5594c4754592ee1d31ed9f77878c5d3
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Verify collector bytes
+        run: |
+          sha256sum --check <<'HASHES'
+          b3d8a377bc74d0b682a85a1933cf8a55eabcd924c43e6ab4d57270e182e63b14  verification/hosted_ci/capture_hosted_math.cjs
+          edbc2d72af94e96b78166d74b66fcea150134f2f3ebaaea121e9057768e1dbfe  verification/hosted_ci/check_rendered_math.py
+          cf2374791bef13f29ce254179ea00aa1c38943272fc1881ec8c188876c22f631  verification/hosted_ci/probe_hosted_math.cjs
+          HASHES
+      - name: Install isolated browser dependencies
+        run: |
+          npm install --prefix "$RUNNER_TEMP/hosted-deps" --no-audit --no-fund playwright@1.56.1 mathjax-full@3.2.1
+          "$RUNNER_TEMP/hosted-deps/node_modules/.bin/playwright" install --with-deps chromium
+      - name: Capture pinned GitHub mathematics
+        env:
+          NODE_PATH: ${{ runner.temp }}/hosted-deps/node_modules
+        run: |
+          node verification/hosted_ci/probe_hosted_math.cjs --root "$GITHUB_WORKSPACE" --repository GoGoKo699/Fermi-Sea-Reservoir-Locality --revision "$SCIENCE_REVISION" --page science/jump_radius.md --output "$RUNNER_TEMP/hosted-probe"
+          node verification/hosted_ci/capture_hosted_math.cjs --root "$GITHUB_WORKSPACE" --repository GoGoKo699/Fermi-Sea-Reservoir-Locality --revision "$SCIENCE_REVISION" --output "$RUNNER_TEMP/hosted-evidence"
+      - name: Retain evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: hosted-math-full-${{ github.run_id }}
+          path: |
+            ${{ runner.temp }}/hosted-evidence
+            ${{ runner.temp }}/hosted-probe
+          if-no-files-found: error
+          retention-days: 7
+          compression-level: 6
