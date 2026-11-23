@@ -225,11 +225,11 @@ The uniform amplitude error satisfies
 \le\frac{\epsilon u}{4\sqrt2\,N}.
 ```
 
-Set $`v=(h(k),h(k+\pi))`$ and $`\widehat v=(\widehat h(k),\widehat h(k+\pi))`$. With $`\nu=\epsilon/(4N)`$,
+Set $`v=(h(k),h(k+\pi))`$ and $`\widehat v=(\widehat h(k),\widehat h(k+\pi))`$. Write $`\ell_2(v)=\sqrt{|v_1|^2+|v_2|^2}`$ for the Euclidean norm. With $`\nu=\epsilon/(4N)`$,
 
 ```math
-\|\widehat v-v\|_2
-\le\nu u\le\nu\|v\|_2.
+\ell_2(\widehat v-v)
+\le\nu u\le\nu\ell_2(v).
 ```
 
 It follows that
@@ -254,14 +254,14 @@ To control stationary occupations, for nonzero vectors $`v,w\in\mathbb C^2`$ use
 
 ```math
 \left|
-\frac{|v_1|^2}{\|v\|_2^2}
--\frac{|w_1|^2}{\|w\|_2^2}
+\frac{|v_1|^2}{\ell_2(v)^2}
+-\frac{|w_1|^2}{\ell_2(w)^2}
 \right|
 \le
 \sqrt{1-\left|
-\left\langle\frac v{\|v\|_2},\frac w{\|w\|_2}\right\rangle
+\left\langle\frac v{\ell_2(v)},\frac w{\ell_2(w)}\right\rangle
 \right|^2}
-\le\frac{\|v-w\|_2}{\|v\|_2}.
+\le\frac{\ell_2(v-w)}{\ell_2(v)}.
 ```
 
 The first inequality is the measurement bound for pure-state trace distance. The second follows by projecting $`v`$ onto the orthogonal complement of $`w`$. Thus
